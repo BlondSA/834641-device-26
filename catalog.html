@@ -2,119 +2,361 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy: Девайс - Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <!-- Шапка сайта с навигационным меню-->
       <nav>
-        <ul>
-          <a href="index.html" title="Интернет магазин «DEVICE»">
-            <img src="img/index-logo.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
+        <h1>
+          <a title="Интернет магазин «DEVICE»">
+            <img src="img/logo-device.svg" width="164" height="36" alt="Девайс">
           </a>
-          <ul>
-            <li><button type="button" id="Search">Поиск</button></li>
-            <li><input type="text" name="Search" value="Поиск по сайту"></li>
-            <li><button type="button">Войти</button></li>
-            <li><button type="button">Сравнить</button></li>
-            <li><button type="button">Корзина</button></li>
-          </ul>
-          <ul>
-            <li><a href="catalog.html">Каталог товаров</a></li>
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
+        </h1>
+        <ul>
+          <li>
+            <label>
+              <img src="img/search.svg" width="16" height="16" alt="">
+              <input type="text" name="search" placeholder="Поиск по сайту">
+            </label>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/user.svg" width="13" height="12">
+              Валентин Петухов
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Выйти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/compare.svg" width="10" height="10">
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/cart.svg" width="12" height="12">
+              Корзина
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div>
+              <a href="catalog.html">
+                Каталог товаров
+                <img src="img/plus.svg" width="16" height="16" alt="">
+              </a>
+              <ul>
+                <li>
+                  <a href="">
+                    Виртуальная реальность 
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Моноподы для селфи
+                   </a>
+                </li>
+                <li>
+                  <a href="">
+                    Экшн-камеры
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Фитнес-браслеты
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Умные часы
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    Квадрокоптеры
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="delivery.html">Доставка</a>
+          </li>
+          <li>
+            <a href="warranty.html">Гарантия</a>
+          </li>
+          <li>
+            <a href="contacts.html">Контакты</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main> <!-- Главное меню основной страницы -->
+    <main>
       <h1>Моноподы для селфи</h1>
       <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li>Моноподы для селфи</li>
+        <li>
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="catalog.html">
+            Каталог товаров
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Моноподы для селфи
+          </a>
+        </li>
+      </ul>
+      <div>
+        <ul>
+          <li>
+            <h2>
+              Фильтр:
+            </h2>
+          </li>
+          <li>
+            <p>Стоимость</p>
+            <input type="range" min="0" max="9000" value="5000">
+          </li>
+          <li>
+            <p>Цвет</p>
+            <ul>
+              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Черный</li>
+              <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Белый</li>
+              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Синий</li>
+              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Красный</li>
+              <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Розовый</li>
+            </ul>
+          </li>
+          <li>
+            <p>Bluetooth</p>
+            <ul>
+              <li><img src="img/radio-on.svg" alt=""></li>
+              <li><img src="img/radio-off.svg" alt=""></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" tittle="">Показать</a>
+          </li>
         </ul>
+      </div>
+      </section>
       <section>
-        <h2>Фильтр товаров</h2>
-        <!-- Здесь будет форма фильтра товаров -->
+        <ul>
+          <li>
+            <h2>
+              Сортировка:
+            </h2>
+          </li>
+          <li>
+            <a href="">
+              По цене
+            </a>
+          </li>
+          <li>
+            <a href="">
+              По типу
+            </a>
+          </li>
+          <li>
+            <a href="">
+              По популярности
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+            </a>
+          </li>
+        </ul>
       </section>
       <section>
         <h2>Список моноподов для селфи</h2>
         <ul>
           <li>
-              <p><a href="catalog-item.html"><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></a></p>
-              <span>Любительская селфи-палка</span>
+              <a href="">
+                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              </a>
+              <p>Любительская селфи-палка</p>
               <p>500 руб.</p>
           </li>
           <li>
-              <p><a href="catalog-item.html"><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка"></a></p>
-              <span>Профессиональная селфи-палка</span>
+              <a href="">
+                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              </a>
+              <p>Профессиональная селфи-палка</p>
               <p>1500 руб.</p>
           </li>
           <li>
-              <p><a href="catalog-item.html"><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></a></p>
-              <span>Любительская селфи-палка</span>
+              <a href="">
+                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              </a>
+              <p>Любительская селфи-палка</p>
               <p>2500 руб.</p>
           </li>
           <li>
-            <span>New</span>>
-            <p><a href="catalog-item.html"><img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»"></a></p>
-              <span>Селфи-палка «Следуй за мной»</span>
-              <p>4900 руб.</p>
+            <img src="img/Shape-2.svg" width="64" height="63" alt="">
+            <p>New</p>
+            <a href="">
+              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            </a>
+            <p>Селфи-палка «Следуй за мной»</p>
+            <p>4900 руб.</p>
           </li>
         </ul>
         <ul>
-          <li><a href="#">Назад</a></li>
-          <li><a href="#1">1</a></li>
-          <li><a href="#2">2</a></li>
-          <li><a href="#3">3</a></li>
-          <li><a href="#">Вперед</a></li>
+          <li>
+            <a href="#">
+              Назад
+            </a>
+          </li>
+          <li>
+            <a href="#1">
+              1
+            </a>
+          </li>
+          <li>
+            <a href="#2">
+              2
+            </a>
+          </li>
+          <li>
+            <a href="#3">
+              3
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Вперед
+            </a>
+          </li>
         </ul>
       </section>
     </main>
     <footer>
       <!-- Подвал -->
+      <a title="Интернет магазин «DEVICE»">
+        <img src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
+      </a>
       <div>
         <ul>
-        <a href="index.html"><img src="img/index-logo.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»"></a>
+          <li>
+            <a href="#">
+              <img src="img/user-yellow.svg" width="13" height="12" alt="">
+              Валентин Петухов
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Выйти
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/compare-yellow.svg" width="10" height="10" alt="">
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/cart-yellow.svg" width="12" height="12" alt="">
+              Корзина
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
         <p>г. Москва, ул. Строителей, 15</p>
-        </ul>
-      </div>
-      <div>
         <ul>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="warranty.html">Гарантия</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-          </ul>
-      </div>
-      <div>
-        <ul>
-          <li><button type="button">Войти</button></li>
-          <li><button type="button">Сравнить</button></li>
-          <li><button type="button">Корзина</button></li>
+          <li>
+            <a href="delivery.html">
+              Доставка
+            </a>
+          </li>
+          <li>
+            <a href="warranty.html">
+              Гарантия
+            </a>
+          </li>
+          <li>
+            <a href="contacts.html">
+              Контакты
+            </a>
+          </li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
-        <a href="https://htmlacademy.ru/" title="HTML Academy"><img scr="img/logo-HTML-Academy.img" width="27" height="35" alt="Логитип HTML Academy"></a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="facebook.com">
+              <img src="img/fb.svg" width="32" height="32" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a href="www.instagram.com">
+              <img src="img/instagram.svg" width="32" height="32" alt="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="www.twitter.com">
+              <img src="img/twitter.svg" width="32" height="32" alt="Twitter">
+            </a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+          <img src="img/logo-html.svg" width="27" height="35" alt="Логитип HTML Academy">
+        </a>
       </div>
     </footer>
-    <section>
-      <!-- Всплывающие окна -->
+    <!-- Всплывающие окна -->
+
+    <!--<section>
       <h2>Личный кабинет</h2>
       <p>Введите свой логин и пароль.</p>
-        <input type="name" name="Имя" value="Имя">
-        <input type="password" name="Пароль" value="Пароль">
-        <button type="submit">Войти</button>
-        <button type="button">Закрыть</button>
+      <input type="text" name="Имя" value="Имя">
+      <input type="password" name="Пароль" value="Пароль">
+      <button type="submit">Войти</button>
+      <button type="button">Закрыть</button>
+    </section> -->
+    <section>
+      <h2>Напишие нам</h2>
+      <label>
+        Ваше имя:
+        <input type="text" name="Имя" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        Ваш e-mail:
+        <input type="email" name="Email" placeholder="email@example.com">
+      </label>
+      <label>
+        Текст письма:
+        <input type="text" name="text" placeholder="В свободной форме">
+      </label>
+      <button type="submit">Отправить</button>
+      <button type="button">Закрыть</button>
     </section>
     <section>
       <h2>Как до нас добраться</h2>
-      <button type="button">Закрыть</button>
+      <img src="img/map-big.png" width="960" height="559" alt="Большая карта">
+      <button type="button">
+        <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть">
+      </button>
     </section>
   </body>
 </html>
