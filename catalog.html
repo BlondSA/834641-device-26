@@ -10,90 +10,72 @@
       <!-- Шапка сайта с навигационным меню-->
       <nav>
         <h1>
-          <a title="Интернет магазин «DEVICE»">
+          <a href="" title="Интернет магазин «DEVICE»">
             <img src="img/logo-device.svg" width="164" height="36" alt="Девайс">
           </a>
         </h1>
         <ul>
           <li>
             <label>
-              <img src="img/search.svg" width="16" height="16" alt="">
+              <img src="img/search.svg" width="16" height="16" alt="Поисковая строка по сайту">
               <input type="text" name="search" placeholder="Поиск по сайту">
             </label>
           </li>
           <li>
             <a href="#">
-              <img src="img/user.svg" width="13" height="12">
-              Валентин Петухов
+              <img src="img/user.svg" width="13" height="12">Валентин Петухов
             </a>
           </li>
           <li>
-            <a href="#">
-              Выйти
-            </a>
+            <a href="#">Выйти</a>
           </li>
           <li>
             <a href="#">
-              <img src="img/compare.svg" width="10" height="10">
-              Сравнить
+              <img src="img/compare.svg" width="10" height="10">Сравнить
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="img/cart.svg" width="12" height="12">
-              Корзина
+            <a href="#" class="">
+              <img src="img/cart.svg" width="12" height="12">Корзина
             </a>
           </li>
         </ul>
         <ul>
           <li>
-            <div>
-              <a href="catalog.html">
-                Каталог товаров
+            <nav>
+              <a href="catalog.html" title="Открыть каталог товаров">Каталог товаров
                 <img src="img/plus.svg" width="16" height="16" alt="">
               </a>
               <ul>
                 <li>
-                  <a href="">
-                    Виртуальная реальность 
-                  </a>
+                  <a href="" title="Каталог очков виртуальной реальности">Виртуальная реальность </a>
                 </li>
                 <li>
-                  <a href="">
-                    Моноподы для селфи
-                   </a>
+                  <a href="" title="Каталог моноподов для селфи">Моноподы для селфи </a>
                 </li>
                 <li>
-                  <a href="">
-                    Экшн-камеры
-                  </a>
+                  <a href="" title="Каталог экшн-камер">Экшн-камеры</a>
                 </li>
                 <li>
-                  <a href="">
-                    Фитнес-браслеты
-                  </a>
+                  <a href="" title="Каталог фитнес-браслетов">Фитнес-браслеты</a>
                 </li>
                 <li>
-                  <a href="">
-                    Умные часы
-                  </a>
+                  <a href="" title="Каталог умных часов">Умные часы</a>
                 </li>
                 <li>
-                  <a href="">
-                    Квадрокоптеры
-                  </a>
+                  <a href="" title="Каталог квадрокоптеров">Квадрокоптеры</a>
                 </li>
               </ul>
-            </div>
+            </nav>
           </li>
           <li>
-            <a href="delivery.html">Доставка</a>
+            <a href="delivery.html" title="Узнать подробнее о доставке">Доставка</a>
           </li>
           <li>
-            <a href="warranty.html">Гарантия</a>
+            <a href="warranty.html" title="Узнать подробнее о гарантии">Гарантия</a>
           </li>
           <li>
-            <a href="contacts.html">Контакты</a>
+            <a href="contacts.html" title="Контакты для связи с нами">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -102,76 +84,82 @@
       <h1>Моноподы для селфи</h1>
       <ul>
         <li>
-          <a href="index.html">
-            Главная
-          </a>
+          <a href="index.html">Главная</a>
         </li>
         <li>
-          <a href="catalog.html">
-            Каталог товаров
-          </a>
+          <a href="catalog.html">Каталог товаров</a>
         </li>
         <li>
-          <a href="">
-            Моноподы для селфи
-          </a>
+          <a href="">Моноподы для селфи</a>
         </li>
       </ul>
       <div>
-        <ul>
-          <li>
-            <h2>
-              Фильтр:
-            </h2>
-          </li>
-          <li>
-            <p>Стоимость</p>
-            <input type="range" min="0" max="9000" value="5000">
-          </li>
-          <li>
-            <p>Цвет</p>
-            <ul>
-              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Черный</li>
-              <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Белый</li>
-              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Синий</li>
-              <li><img src="img/checkbox-on.svg" width="27" height="23" alt="">Красный</li>
-              <li><img src="img/checkbox-off.svg" width="23" height="23" alt="">Розовый</li>
-            </ul>
-          </li>
-          <li>
-            <p>Bluetooth</p>
-            <ul>
-              <li><img src="img/radio-on.svg" alt=""></li>
-              <li><img src="img/radio-off.svg" alt=""></li>
-            </ul>
-          </li>
-          <li>
-            <a href="" tittle="">Показать</a>
-          </li>
-        </ul>
+        <h2>Фильтр:</h2>
+        <form method="GET" action="http://#">
+          <ul>
+            <li>
+              <legend>Стоимость</legend>
+              <input type="range" min="0" max="9000" value="5000">
+              <label></label>
+            </li>
+            <li>
+              <legend>Цвет</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="checkbox-black" id="black-check" checked>
+                  <label for="black-check">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkbox-white" id="white-check">
+                  <label for="white-check">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkbox-blue" id="blue-check" checked>
+                  <label for="blue-check">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkbox-red" id="red-check" checked>
+                  <label for="red-check">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="checkbox-pink" id="pink-check">
+                  <label for="pink-check">Розовый</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <legend>Bluetooth</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="bluetooth-on-off" id="radio-button-on">
+                  <label for="radio-button-on">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" name="bluetooth-on-off" id="radio-button-off">
+                  <label for="radio-button-off">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" title="">Показать</a>
+            </li>
+          </ul>
+        </form>
       </div>
       </section>
       <section>
         <ul>
           <li>
-            <h2>
-              Сортировка:
-            </h2>
+            <h2>Сортировка:</h2>
           </li>
           <li>
-            <a href="">
-              По цене
-            </a>
+            <a href="">По цене</a>
           </li>
           <li>
-            <a href="">
-              По типу
-            </a>
+            <a href="">По типу</a>
           </li>
           <li>
-            <a href="">
-              По популярности
-            </a>
+            <a href="">По популярности</a>
           </li>
           <li>
             <a href="">
@@ -189,61 +177,59 @@
         <h2>Список моноподов для селфи</h2>
         <ul>
           <li>
-              <a href="">
-                <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              </a>
-              <p>Любительская селфи-палка</p>
-              <p>500 руб.</p>
+            <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+            <p>
+              <span>Любительская селфи-палка</span>
+              <span>500 руб.</span>
+            </p>
           </li>
           <li>
-              <a href="">
-                <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              </a>
-              <p>Профессиональная селфи-палка</p>
-              <p>1500 руб.</p>
+            <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+            <p>
+              <span>Профессиональная селфи-палка</span>
+              <span>1500 руб.</span>
+            </p>
           </li>
           <li>
-              <a href="">
-                <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              </a>
-              <p>Любительская селфи-палка</p>
-              <p>2500 руб.</p>
+            <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+            <p>
+              <span>Любительская селфи-палка</span>
+              <span>2500 руб.</span>
+            </p>
           </li>
           <li>
             <img src="img/Shape-2.svg" width="64" height="63" alt="">
-            <p>New</p>
-            <a href="">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-            </a>
-            <p>Селфи-палка «Следуй за мной»</p>
-            <p>4900 руб.</p>
+            <span>New</span>
+            <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+            <a href="">В корзину</a>
+            <a href="">Добавить к сравнению</a>
+            <p>
+              <span>Селфи-палка «Следуй за мной»</span>
+              <span>4900 руб.</span>
+            </p>
           </li>
         </ul>
         <ul>
           <li>
-            <a href="#">
-              Назад
-            </a>
+            <a href="#">Назад</a>
           </li>
           <li>
-            <a href="#1">
-              1
-            </a>
+            <a href="#1">1</a>
           </li>
           <li>
-            <a href="#2">
-              2
-            </a>
+            <a href="#2">2</a>
           </li>
           <li>
-            <a href="#3">
-              3
-            </a>
+            <a href="#3">3</a>
           </li>
           <li>
-            <a href="#">
-              Вперед
-            </a>
+            <a href="#">Вперед</a>
           </li>
         </ul>
       </section>
@@ -257,25 +243,20 @@
         <ul>
           <li>
             <a href="#">
-              <img src="img/user-yellow.svg" width="13" height="12" alt="">
-              Валентин Петухов
+              <img src="img/user-yellow.svg" width="13" height="12" alt="">Валентин Петухов
+            </a>
+          </li>
+          <li>
+            <a href="#">Выйти</a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/compare-yellow.svg" width="10" height="10" alt="">Сравнить
             </a>
           </li>
           <li>
             <a href="#">
-              Выйти
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/compare-yellow.svg" width="10" height="10" alt="">
-              Сравнить
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/cart-yellow.svg" width="12" height="12" alt="">
-              Корзина
+              <img src="img/cart-yellow.svg" width="12" height="12" alt="">Корзина
             </a>
           </li>
         </ul>
@@ -284,72 +265,79 @@
         <p>г. Москва, ул. Строителей, 15</p>
         <ul>
           <li>
-            <a href="delivery.html">
-              Доставка
-            </a>
+            <a href="delivery.html" title="Доставка товара">Доставка</a>
           </li>
           <li>
-            <a href="warranty.html">
-              Гарантия
-            </a>
+            <a href="warranty.html" title="Гарантия">Гарантия</a>
           </li>
           <li>
-            <a href="contacts.html">
-              Контакты
-            </a>
+            <a href="contacts.html" title="Как с нами связаться">Контакты</a>
           </li>
         </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <a href="tel:+74954959595" title="Наш телефон">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div>
         <ul>
           <li>
-            <a href="facebook.com">
-              <img src="img/fb.svg" width="32" height="32" alt="Facebook">
+            <a href="facebook.com" title="Перейти на нашу страницу в Фэйсбук">
+              <img src="img/fb.svg" width="32" height="32" alt="Facebook" target="_blank">
             </a>
           </li>
           <li>
-            <a href="www.instagram.com">
-              <img src="img/instagram.svg" width="32" height="32" alt="Instagram">
+            <a href="www.instagram.com" title="Перейти на нашу страницу в Инстаграм">
+              <img src="img/instagram.svg" width="32" height="32" alt="Instagram" target="_blank">
             </a>
           </li>
           <li>
-            <a href="www.twitter.com">
-              <img src="img/twitter.svg" width="32" height="32" alt="Twitter">
+            <a href="www.twitter.com" title="Перейти на нашу страницу в Твиттере">
+              <img src="img/twitter.svg" width="32" height="32" alt="Twitter" target="_blank">
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="HTML Academy" target="blank">
           <img src="img/logo-html.svg" width="27" height="35" alt="Логитип HTML Academy">
         </a>
       </div>
     </footer>
     <!-- Всплывающие окна -->
-
-    <!--<section>
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <input type="text" name="Имя" value="Имя">
-      <input type="password" name="Пароль" value="Пароль">
+      <form method="post" action="https://#">
+        <h2>Личный кабинет</h2>
+        <fieldset>
+          <legeng>Введите логин и пароль</legeng><br>
+          <label for="users-login"></label>
+          <input type="text" name="Name" id="users-login" placeholder="Имя">
+          <label for="users-password"></label>
+          <input type="password" name="password" id="users-password" placeholder="Пароль">
+        </fieldset>
+        <p>
+          <input type="checkbox" id="save-password" name="save-password" checked>
+          <label for="save-password">Сохранить пароль</label>
+          <a href="#">Восстановить пароль</a>
+        </p>
+      </form>
       <button type="submit">Войти</button>
       <button type="button">Закрыть</button>
-    </section> -->
+    </section>
     <section>
-      <h2>Напишие нам</h2>
-      <label>
-        Ваше имя:
-        <input type="text" name="Имя" placeholder="Имя Фамилия">
-      </label>
-      <label>
-        Ваш e-mail:
-        <input type="email" name="Email" placeholder="email@example.com">
-      </label>
-      <label>
-        Текст письма:
-        <input type="text" name="text" placeholder="В свободной форме">
-      </label>
-      <button type="submit">Отправить</button>
-      <button type="button">Закрыть</button>
+      <form method="POST" action="https://echo.htmlacademy.ru">
+        <h2>Напишите нам</h2>
+        <p>
+          <label for="user-name">Ваше имя:</label>
+            <input type="text" name="Name" id="user-name" placeholder="Имя Фамилия">
+          <label for="user-email">Ваш e-mail:</label>
+            <input type="email" name="Email" id="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="users-message">Текст письма:</label>
+          <input type="text" name="text" id="users-message" placeholder="В свободной форме">
+        </p>
+      </form>
+        <button type="submit">
+          Отправить
+        </button>
+        <button type="button">
+          Закрыть
+        </button>
     </section>
     <section>
       <h2>Как до нас добраться</h2>
