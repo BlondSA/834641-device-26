@@ -131,7 +131,7 @@
               <legend>Bluetooth</legend>
               <ul>
                 <li>
-                  <input type="radio" name="bluetooth-on-off" id="radio-button-on">
+                  <input type="radio" name="bluetooth-on-off" id="radio-button-on" checked>
                   <label for="radio-button-on">Есть</label>
                 </li>
                 <li>
@@ -162,13 +162,11 @@
             <a href="">По популярности</a>
           </li>
           <li>
-            <a href="">
-              <img src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
+            <a class="arrow arrow-up" href="">
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
+            <a class="arrow arrow-down" href="">
             </a>
           </li>
         </ul>
@@ -342,6 +340,7 @@
     <section>
       <h2>Как до нас добраться</h2>
       <img src="img/map-big.png" width="960" height="559" alt="Большая карта">
+      <button class="label-close" type="button"></button>
       <button type="button">
         <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть">
       </button>

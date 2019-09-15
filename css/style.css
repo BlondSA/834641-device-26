@@ -9,3 +9,28 @@
   overflow: hidden;
 }
 ul {list-style-type: none;}
+
+/* стрелки фильтра */
+a.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0px;
+}
+
+.arrow::before {
+  border: 10px solid #000000;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+  content: "";
+  display: inline-block;
+}
+
+.arrow-up::before {
+  border-top-width: 0px;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0px;
+}
