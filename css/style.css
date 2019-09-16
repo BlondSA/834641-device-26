@@ -1,3 +1,4 @@
+/* скрытие элементов, которые не будет видно на странице */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -9,6 +10,8 @@
   overflow: hidden;
 }
 ul {list-style-type: none;}
+ul.transportcompanies {list-style-type: circle;}
+
 
 /* стрелки фильтра */
 a.arrow {

@@ -246,7 +246,7 @@
         <div>
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.  Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-          <ul>
+          <ul class="transportcompanies">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
@@ -330,14 +330,12 @@
     </footer>
       <!-- Всплывающие окна -->
       <form method="post" action="https://#">
-        <h2>Личный кабинет</h2>
-        <fieldset>
+        <h2 class="visually-hidden">Личный кабинет</h2>
           <legeng>Введите логин и пароль</legeng><br>
           <label for="users-login"></label>
           <input type="text" name="Name" id="users-login" placeholder="Имя">
           <label for="users-password"></label>
           <input type="password" name="password" id="users-password" placeholder="Пароль">
-        </fieldset>
         <p>
           <input type="checkbox" id="save-password" name="save-password" checked>
           <label for="save-password">Сохранить пароль</label>
@@ -348,8 +346,8 @@
       <button type="button">Закрыть</button>
     </section>
     <section>
-      <form method="POST" action="https://echo.htmlacademy.ru">
-        <h2>Напишите нам</h2>
+      <form method="POST" action="https://#">
+        <h2 class="visually-hidden">Напишите нам</h2>
         <p>
           <label for="user-name">Ваше имя:</label>
             <input type="text" name="Name" id="user-name" placeholder="Имя Фамилия">
@@ -369,7 +367,7 @@
         </button>
     </section>
     <section>
-      <h2>Как до нас добраться</h2>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-big.png" width="960" height="559" alt="Большая карта">
       <button type="button">
         <img src="img/modal-close.svg" width="55" height="55" alt="Закрыть">
