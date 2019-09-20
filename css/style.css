@@ -1,42 +1,41 @@
 @font-face {
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans';
   src: local('Open Sans Light'), local('Open-Sans-Light'),
-      url('fonts/OpenSans-Light/OpenSans-Light.woff2') format('woff2'),
-      url('fonts/OpenSans-Light/OpenSans-Light.woff') format('woff'),
-      url('fonts/OpenSans-Light/OpenSans-Light.ttf') format('truetype');
+      url('../fonts/opensanslight.woff2') format('woff2'),
+      url('../fonts/opensanslight.woff') format('woff'),
+      url('../fonts/OpenSans-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
+  font-family: 'Gilroy';
   src: local('Gilroy Light'), local('Gilroy-Light'),
-      url('fonts/Gilroy-Light/Gilroy-Light.woff2') format('woff2'),
-      url('fonts/Gilroy-Light/Gilroy-Light.woff') format('woff'),
-      url('fonts/Gilroy-Light/Gilroy-Light.ttf') format('truetype');
+      url('../fonts/gilroylight.woff2') format('woff2'),
+      url('../fonts/gilroylight.woff') format('woff'),
+      url('../fonts/Gilroylight.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy-Extrabold';
+  font-family: 'Gilroy';
   src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
-      url('fonts/Gilroy-Extrabold/Gilroy-Extrabold.woff2') format('woff2'),
-      url('fonts/Gilroy-Extrabold/Gilroy-Extrabold.woff') format('woff'),
-      url('fonts/Gilroy-Extrabold/Gilroy-Extrabold.ttf') format('truetype');
+      url('../fonts/gilroyextrabold.woff2') format('woff2'),
+      url('../fonts/gilroyextrabold.woff') format('woff'),
+      url('../fonts/Gilroyextrabold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
-
 body {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  background-position: top center;
+  font-weight: 300;
+  font-size: 15px;
+  color: #464646;
+  letter-spacing: 0.15px;
+  line-height: 30px;
 }
 
 ul {
@@ -47,10 +46,7 @@ ul {
   background: rgba(240, 197, 46, 0.5);
   width: 1160px;
   height: auto;
-  margin: 40px 140px;
-}
-.main-header-logo {
-
+  margin: 40px auto;
 }
 
 a {
@@ -58,47 +54,72 @@ a {
   color: #000000;
 }
 
+.button {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  text-align: center;
+  line-height: 24px;
+  border: 1px solid #f4d361;
+  background-color: #F0C52E;
+  background-size: 8px;
+}
+
 .header-user-navigation {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 15px;
   color: #000000;
   letter-spacing: 0.15px;
   line-height: 30px;
 }
 
+.header-log-out {
+  opacity: 0.3;
+}
+
 .header-site-navigation {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.6px;
   line-height: 24px;
-  text-transform: uppercase;
 }
 
-.slider-1 h2,
-.slider-2 h2,
-.slider-3 h2 {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+.catalog-items-menu {
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  line-height: 36px;
+}
+
+.slider {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.slider-number {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 179.2px;
+  color: #FFFFFF;
+  letter-spacing: 0.36px;
+  text-align: right;
+  line-height: 179.2px;
+}
+
+.slider-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 47px;
   color: #000000;
   letter-spacing: 0.47px;
   line-height: 56px;
 }
 
-.slider-1 p,
-.slider-2 p,
-.slider-3 p {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 15px;
-  color: #464646;
-  letter-spacing: 0.15px;
-  line-height: 30px;
-}
-
-.slider-1 a,
-.slider-2 a,
-.slider-3 a {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+.slider-button {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.5px;
@@ -106,195 +127,211 @@ a {
   line-height: 24px;
 }
 
-.slider-1 tr:first-child,
-.slider-2 tr:first-child,
-.slider-3 tr:first-child {
-  font-family: "Gilroy-Light", Arial, sans-serif;
+.slider-table tr:first-child {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 36px;
   color: #000000;
   letter-spacing: 0.36px;
   line-height: 48px;
 }
 
-.slider-1 tr:last-child,
-.slider-2 tr:last-child,
-.slider-3 tr:last-child {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+.slider-table tr:last-child {
   font-size: 13px;
-  color: #464646;
   letter-spacing: 0.13px;
   line-height: 20px;
 }
 
-.slider-1 span,
-.slider-2 span,
-.slider-3 span {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 179.2px;
-  color: #ffffff;
-  letter-spacing: 0.36px;
-  text-align: right;
-  line-height: 179.2px;
+.popular-list {
+  width: 1169px;
+  min-height: 242px;
+  margin: 0 auto;
 }
 
-.popular p {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  color: #000000;
-  letter-spacing: 0.18px;
-  line-height: 24px;
-}
-
-.popular img {
-  background: rgba(240, 197, 46, 0.5);
+.popular-img {
   width: 160px;
   height: 160px;
+  background: rgba(240, 197, 46, 0.5);
 }
 
-.service-conteiner {
+.service-slider {
   background: #E5E5E5;
+  min-height: 288px;
+  margin: auto auto;
 }
 
-.info {
-  background: #ffffff;
+/*
+.service-slider-box {
+  width: 1104px;
+  height: 177px;
+  margin: 0 auto;
+}
+*/
+
+.service-slider-navigation {
 }
 
-.info h2 {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+.service-slide-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 47px;
   color: #000000;
   letter-spacing: 0.21px;
   line-height: 48px;
 }
 
-.info p {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 15px;
-  color: #464646;
-  letter-spacing: 0;
-  line-height: 30px;
+/*
+.logos {
+  width: 1157px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 94px;
+}
+*/
+
+.about-us {
+  width: 488px;
+  padding: 1px;
+}
+.about-us-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  color: #000000;
+  letter-spacing: 0.21px;
+  line-height: 48px;
 }
 
-.transport-companies {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+.about-us-text {
+  letter-spacing: 0;
+  width: 477px;
+}
+
+.about-us-transport-companies {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 16px;
   color: #000000;
   letter-spacing: 0;
   line-height: 40px;
+  width: 477px;
   text-decoration: circle;
 }
 
-.about-us .button,
-.contacts .button {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
+.about-us-button {}
+
+.contacts {
+  width: 562px;
+  padding: 1px;
+}
+
+.contacts-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
   color: #000000;
-  letter-spacing: 3.5px;
-  text-align: center;
-  line-height: 24px;
-  text-transform: uppercase;
+  letter-spacing: 0.21px;
+  line-height: 48px;
+}
+
+.contacts-text {
+  letter-spacing: 0;
+  width: 541px;
 }
 
 .main-footer {
+  width: auto;
+  min-height: 323px;
   background: #464646;
+  margin-top: 89px;
 }
-.footer-user-navigation a {
-  font-family: "OpenSans-Light", Arial, sans-serif;
+.main-footer-logo {
+  padding-left: 140px;
+  padding-top: 59px;
+}
+
+.footer-user-navigation-text {
+  opacity: 0.7;
   font-size: 15px;
   color: #FFFFFF;
   letter-spacing: 0.15px;
   line-height: 36px;
-  opacity: 0.7;
-
 }
 
-.footer-site-navigation {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  color: #FFFFFF;
-  letter-spacing: 3.6px;
-  line-height: 24px;
-}
-.footer-site-navigation .footer-addresse,
-.footer-site-navigation .footer-telephone {
-  font-family: "OpenSans-Light", Arial, sans-serif;
-  font-size: 15px;
+.footer-address {
   color: #FFFFFF;
   letter-spacing: 0;
   line-height: 30px;
 }
 
-.footer-site-navigation a {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+.footer-service-info {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: #FFFFFF;
   letter-spacing: 3.6px;
   line-height: 24px;
 }
 
-
-/* Каталог */
+.footer-phone {
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: right;
+}
 
 .main-conteiner {
-  background-color: #ffffff;
+  background: #ffffff;
+}
 
-}
-.page-title {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-font-size: 47px;
-color: #000000;
-letter-spacing: 0.91px;
-line-height: 48px;
-}
-.breadcrumb {
+.breadcrumbs {
+  /* height: 24px; */
   opacity: 0.3;
-  font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 14px;
   color: #000000;
   letter-spacing: 0.14px;
   line-height: 24px;
 }
+
+.page-title {
+font-family: "Gilroy", Arial, Helvetica, sans-serif;
+font-weight: 800;
+font-size: 47px;
+color: #000000;
+letter-spacing: 0.91px;
+line-height: 48px;
+}
+
 .filters {
-  font-family: "OpenSans-Light", Arial, sans-serif;
   font-size: 14px;
   color: #000000;
   letter-spacing: 0.14px;
   line-height: 39px;
   background-color: #EEEEEE;
 }
-.filter-title {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 16px;
-  color: #000000;
-  letter-spacing: 3.5px;
-  line-height: 24px;
-  background-color: #464646;
-}
 
 .filter-title {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 16px;
   color: #000000;
   letter-spacing: 3.5px;
   line-height: 24px;
+  background-color: #dcdcdc;
   text-transform: uppercase;
 }
+/* Каталог */
+/*
 
 .catalog-page .sorting {
   background-color: #EEEEEE;
 }
 
-.sorting {
-
-}
-
 .item span:last-child {
   font-family: Gilroy-Light;
-font-size: 16px;
-color: #464646;
-letter-spacing: 0.16px;
-text-align: right;
-line-height: 24px;
+  font-size: 16px;
+  color: #464646;
+  letter-spacing: 0.16px;
+  text-align: right;
+  line-height: 24px;
 }
 
 .filter legend {
@@ -351,7 +388,7 @@ line-height: 24px;
   text-align: center;
   line-height: 24px;
 }
-
+*/
 
 
 
