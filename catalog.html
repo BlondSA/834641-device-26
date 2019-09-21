@@ -97,27 +97,27 @@
             <legend>Цвет</legend>
             <ul>
               <li>
-                <label>
+                <label class="filter-checkbox-label">
                   <input class="filter-checkbox" type="checkbox" name="filter-black" checked>Черный
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-checkbox-label">
                   <input class="filter-checkbox" type="checkbox" name="filter-white">Белый
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-checkbox-label">
                   <input class="filter-checkbox" type="checkbox" name="filter-blue" checked>Синий
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-checkbox-label">
                   <input class="filter-checkbox" type="checkbox" name="filter-red" checked>Красный
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-checkbox-label">
                   <input class="filter-checkbox" type="checkbox" name="filter-pink">Розовый
                 </label>
               </li>
@@ -127,12 +127,12 @@
             <legend>Bluetooth</legend>
             <ul>
               <li>
-                <label>
+                <label class="filter-radio-label">
                   <input class="filter-radio" type="radio" name="filter-radio"checked>Есть
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-radio-label">
                   <input class="filter-radio" type="radio" name="filter-radio">Нет
                 </label>
               </li>
@@ -142,91 +142,97 @@
         </form>
       </section>
       <section class="catalog-page">
-        <ul class="sorting">
-          <h2>Сортировка:</h2>
-          <li>
-            <a href="">По цене</a>
-          </li>
-          <li>
-            <a href="">По типу</a>
-          </li>
-          <li>
-            <a href="">По популярности</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a class="arrow arrow-up" href="" title="Сортировка по возрастанию">
-            </a>
-          </li>
-          <li>
-            <a class="arrow arrow-down" href="" title="Сортировка по убыванию">
-            </a>
-          </li>
-        </ul>
-        <ul class="catalog-items">
-          <li class="item">
-            <button class="catalog-add-cart-button button" type="button">В корзину</button>
-            <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
-            <figure>
-              <img src="img/item-1.jpg" width="360" height="380" alt="">
-              <figcaption>
-                <span>Любительская селфи-палка</span>
-                <span>500 руб.</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <button class="catalog-add-cart-button button" type="button">В корзину</button>
-            <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
-            <figure>
-              <img src="img/item-2.jpg" width="360" height="380" alt="">
-              <figcaption>
-                <span>Профессиональная селфи-палка</span>
-                <span>1500 руб.</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <button class="catalog-add-cart-button button" type="button">В корзину</button>
-            <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
-            <figure>
-              <img src="img/item-3.jpg" width="360" height="380" alt="">
-              <figcaption>
-                <span>Любительская селфи-палка</span>
-                <span>2500 руб.</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="item">
-            <button class="catalog-add-cart-button button" type="button">В корзину</button>
-            <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
-            <figure>
-              <img src="img/item-4.jpg" width="360" height="380" alt="">
-              <figcaption>
-                <span>Селфи-палка «Следуй за мной»</span>
-                <span>4900 руб.</span>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a href="">Назад</a>
-          </li>
-          <li class="pagination-item pagination-item-current">
-            <a href="">1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="">Вперед</a>
-          </li>
-        </ul>
+        <div class="sort">
+          <h2 class="sort-title">Сортировка:</h2>
+          <ul class="sort-list-text">
+            <li>
+              <a class="sort-by-price active" href="">По цене</a>
+            </li>
+            <li>
+              <a class="sort-by-type" href="">По типу</a>
+            </li>
+            <li>
+              <a class="sort-by-popularity" href="">По популярности</a>
+            </li>
+          </ul>
+          <ul class="sort-list-arrow">
+            <li>
+              <a class="sort-ascending arrow arrow-up" href="" title="Сортировка по возрастанию">
+              </a>
+            </li>
+            <li>
+              <a class="sort-descending arrow arrow-down" href="" title="Сортировка по убыванию">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog">
+          <ul class="catalog-items">
+            <li class="item">
+              <button class="catalog-add-cart-button button" type="button">В корзину</button>
+              <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
+              <figure>
+                <img class="item-image" src="img/item-1.jpg" width="360" height="380" alt="">
+                <figcaption>
+                  <span class="item-text">Любительская селфи-палка</span>
+                  <span class="item-price">500 руб.</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="item">
+              <button class="catalog-add-cart-button button" type="button">В корзину</button>
+              <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
+              <figure>
+                <img class="item-image" src="img/item-2.jpg" width="360" height="380" alt="">
+                <figcaption>
+                  <span class="item-text">Профессиональная селфи-палка</span>
+                  <span class="item-price">1500 руб.</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="item">
+              <button class="catalog-add-cart-button button" type="button">В корзину</button>
+              <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
+              <figure>
+                <img class="item-image" src="img/item-3.jpg" width="360" height="380" alt="">
+                <figcaption>
+                  <span class="item-text">Любительская селфи-палка</span>
+                  <span class="item-price">2500 руб.</span>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="item">
+              <button class="catalog-add-cart-button button" type="button">В корзину</button>
+              <button class="catalog-compare-button button" type="button">Добавить к сравнению</button>
+              <figure>
+                <img class="item-image" src="img/item-4.jpg" width="360" height="380" alt="">
+                <figcaption>
+                  <span class="item-text">Селфи-палка «Следуй за мной»</span>
+                  <span class="item-price">4900 руб.</span>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-item-link direction" href="">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-item-link activated" href="">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-item-link"  href="">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-item-link" href="">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-item-link direction" href="">Вперед</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="main-footer">

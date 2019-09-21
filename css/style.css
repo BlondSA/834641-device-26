@@ -278,6 +278,8 @@ a {
   text-align: right;
 }
 
+/* Каталог товаров */
+
 .main-conteiner {
   background: #ffffff;
 }
@@ -292,12 +294,12 @@ a {
 }
 
 .page-title {
-font-family: "Gilroy", Arial, Helvetica, sans-serif;
-font-weight: 800;
-font-size: 47px;
-color: #000000;
-letter-spacing: 0.91px;
-line-height: 48px;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  color: #000000;
+  letter-spacing: 0.91px;
+  line-height: 48px;
 }
 
 .filters {
@@ -318,44 +320,102 @@ line-height: 48px;
   background-color: #dcdcdc;
   text-transform: uppercase;
 }
-/* Каталог */
-/*
 
-.catalog-page .sorting {
+.filter-form {
   background-color: #EEEEEE;
 }
 
-.item span:last-child {
-  font-family: Gilroy-Light;
+.filter-form legend {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+}
+
+.filter-checkbox-label {
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.14px;
+  line-height: 39px;
+}
+
+.filter-radio-label {
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0.14px;
+  line-height: 40px;
+}
+
+.filter-button {
+  text-transform: uppercase;
+}
+
+.sort {
+  background-color: #EEEEEE;
+}
+
+.sort-title {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 3.5px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.short-list-text li {
+  font-size: 14px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.sort-by-price,
+.sort-by-type,
+.sort-by-popularity {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-add-cart-button {
+  text-transform: uppercase;
+}
+
+.catalog-compare-button {
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 13px;
+  color: #000000;
+  letter-spacing: 0.13px;
+  text-align: center;
+  line-height: 36px;
+  background: none;
+  border: none;
+}
+
+.item-text {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0.18px;
+  line-height: 24px;
+}
+
+.item-price {
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   color: #464646;
   letter-spacing: 0.16px;
   text-align: right;
-  line-height: 24px;
-}
-
-.filter legend {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  color: #000000;
-  letter-spacing: 0.18px;
-  line-height: 24px;
-}
-
-.filter-button {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  color: #000000;
-  letter-spacing: 3.5px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.catalog-items {
-  font-family: "Gilroy-Extrabold", Arial, sans-serif;
-  font-size: 18px;
-  color: #000000;
-  letter-spacing: 0.18px;
   line-height: 24px;
 }
 
@@ -370,59 +430,32 @@ line-height: 48px;
   line-height: 24px;
 }
 
-.item .button {
+.pagination-item-link {
   opacity: 0.5;
-  font-family: OpenSans-Light;
-  font-size: 13px;
+  font-size: 16px;
   color: #000000;
   letter-spacing: 0.13px;
   text-align: center;
   line-height: 36px;
 }
 
-.item .button:first-child {
-  font-family: Gilroy-Extrabold;
+
+
+.direction {
   font-size: 18px;
   color: #000000;
   letter-spacing: 3.5px;
   text-align: center;
   line-height: 24px;
+  opacity: 1;
 }
-*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.activated {
+  opacity: 1;
+}
 
 /* скрытие элементов, которые не будет видно на странице */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -435,6 +468,7 @@ line-height: 48px;
 }
 
 /* стрелки фильтра */
+
 a.arrow {
   display: inline-block;
   margin: 0 10px;
@@ -460,6 +494,7 @@ a.arrow {
 }
 
 /* кнопка закрыть  */
+
 .close{
   position: absolute;
   top: 22px;
@@ -493,6 +528,7 @@ a.arrow {
 .close:hover {
   opacity: 1;
 }
+
 .close:active {
   opacity: 0.3;
 }
