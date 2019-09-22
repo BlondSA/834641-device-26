@@ -165,6 +165,11 @@ ul {
 
 .open-menu li {
   text-transform: capitalize;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0.15px;
+  line-height: 36px;
 }
 
 .header-site-navigation > .open-menu:hover > .items-catalog{
@@ -273,22 +278,28 @@ ul {
   line-height: 20px;
 }
 
-.popular-containter {
+.popular-container {
   width: 160px;
   height: 160px;
   background: rgba(240, 197, 46, 0.5);
 }
 
-.popular-containter:hover {
+.popular-link:hover .popular-container {
   background: rgba(240, 197, 46, 1);
 }
 
-.popular-containter:active {
+.popular-link:active .popular-container {
   background: rgba(240, 197, 46, 1);
 }
 
 .popular-image {
-opacity: 1;
+  opacity: 1;
+}
+
+.popular-link:hover .popular-image {}
+
+.popular-link:active .popular-image {
+  opacity: 0.3;
 }
 
 .glasses-image {
@@ -297,8 +308,8 @@ opacity: 1;
 }
 
 .monopod-image {
-padding-top: 43px;
-padding-left: 38px;
+  padding-top: 43px;
+  padding-left: 38px;
 }
 
 .action-camera-image {
@@ -330,14 +341,8 @@ padding-left: 38px;
   line-height: 24px;
 }
 
-.popular-containter:active + .popular-text {
+a:active .popular-container + .popular-text {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.popular-image:hover {}
-
-.popular-image:active {
-  opacity: 0.3;
 }
 
 .service-slider {
