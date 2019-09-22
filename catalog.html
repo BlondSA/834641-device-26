@@ -11,7 +11,7 @@
       <!-- Шапка сайта с навигационным меню-->
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo-device.svg" width="164" height="36" alt="Логотип интернет-магазина Девайс">
+          <img class="main-header-image" src="img/logo-device.svg" width="164" height="36" alt="Логотип интернет-магазина Девайс">
         </a>
         <ul class="header-user-navigation">
           <li>
@@ -36,9 +36,9 @@
           </li>
         </ul>
         <ul class="header-site-navigation">
-          <li>
+          <li class="open-menu">
             <a href="">Каталог товаров</a>
-            <ul class="catalog-items-menu">
+            <ul class="items-catalog">
               <li>
                 <a href="">Виртуальная реальность </a>
               </li>
@@ -98,27 +98,27 @@
             <ul>
               <li>
                 <label class="filter-checkbox-label">
-                  <input class="filter-checkbox" type="checkbox" name="filter-black" checked>Черный
+                  <input class="filter-checkbox" type="checkbox" name="filter-black" checked><span>Черный</span>
                 </label>
               </li>
               <li>
                 <label class="filter-checkbox-label">
-                  <input class="filter-checkbox" type="checkbox" name="filter-white">Белый
+                  <input class="filter-checkbox" type="checkbox" name="filter-white"><span>Белый</span>
                 </label>
               </li>
               <li>
                 <label class="filter-checkbox-label">
-                  <input class="filter-checkbox" type="checkbox" name="filter-blue" checked>Синий
+                  <input class="filter-checkbox" type="checkbox" name="filter-blue" checked><span>Синий</span>
                 </label>
               </li>
               <li>
                 <label class="filter-checkbox-label">
-                  <input class="filter-checkbox" type="checkbox" name="filter-red" checked>Красный
+                  <input class="filter-checkbox" type="checkbox" name="filter-red" checked><span>Красный</span>
                 </label>
               </li>
               <li>
                 <label class="filter-checkbox-label">
-                  <input class="filter-checkbox" type="checkbox" name="filter-pink">Розовый
+                  <input class="filter-checkbox" type="checkbox" name="filter-pink"><span>Розовый</span>
                 </label>
               </li>
             </ul>
@@ -128,12 +128,12 @@
             <ul>
               <li>
                 <label class="filter-radio-label">
-                  <input class="filter-radio" type="radio" name="filter-radio"checked>Есть
+                  <input class="filter-radio" type="radio" name="filter-radio"checked><span>Есть</span>
                 </label>
               </li>
               <li>
                 <label class="filter-radio-label">
-                  <input class="filter-radio" type="radio" name="filter-radio">Нет
+                  <input class="filter-radio" type="radio" name="filter-radio"><span>Нет</span>
                 </label>
               </li>
             </ul>
@@ -157,7 +157,7 @@
           </ul>
           <ul class="sort-list-arrow">
             <li>
-              <a class="sort-ascending arrow arrow-up" href="" title="Сортировка по возрастанию">
+              <a class="sort-ascending arrow arrow-up active" href="" title="Сортировка по возрастанию">
               </a>
             </li>
             <li>
@@ -238,7 +238,7 @@
     <footer class="main-footer">
       <!-- Подвал -->
       <a class="main-footer-logo">
-        <img src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
+        <img class="main-footer-image" src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
       </a>
       <div class="footer-user-navigation">
         <ul>
@@ -275,22 +275,22 @@
         <ul>
           <li>
             <a class="social-button" href="facebook.com" title="Перейти на нашу страницу в Фэйсбук">
-              <img src="img/fb.svg" width="32" height="32" alt="Логотип Facebook" target="_blank">
+              <img class="social-button-image" src="img/fb.svg" width="32" height="32" alt="Логотип Facebook" target="_blank">
             </a>
           </li>
           <li>
             <a class="social-button" href="www.instagram.com" title="Перейти на нашу страницу в Инстаграм">
-              <img src="img/instagram.svg" width="32" height="32" alt="Логотип Instagram" target="_blank">
+              <img class="social-button-image" src="img/instagram.svg" width="32" height="32" alt="Логотип Instagram" target="_blank">
             </a>
           </li>
           <li>
             <a class="social-button" href="www.twitter.com" title="Перейти на нашу страницу в Твиттере">
-              <img src="img/twitter.svg" width="32" height="32" alt="Логитип Twitter" target="_blank">
+              <img class="social-button-image" src="img/twitter.svg" width="32" height="32" alt="Логитип Twitter" target="_blank">
             </a>
           </li>
         </ul>
         <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss" title="Перейти на сайт HTML Academy" target="_blank">
-          <img src="img/logo-html.svg" width="27" height="35" alt="Логитип HTML Academy">
+          <img class="footer-copyright-image" class="footer-copyright-image" src="img/logo-html.svg" width="27" height="35" alt="Логитип HTML Academy">
         </a>
       </div>
     </footer>
