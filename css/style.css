@@ -724,7 +724,8 @@ label.filter-radio-label input:disabled + span {
 
 .catalog-add-cart-button:active {
   color: rgba(0, 0, 0, 0.3);
-  font-family: Gilroy-Extrabold;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   letter-spacing: 3.5px;
   text-align: center;
