@@ -13,28 +13,28 @@
         <a>
           <img class="main-header-image" src="img/logo-device.svg" width="164" height="36" alt="Логотип интернет-магазина Девайс">
         </a>
-        <ul class="header-user-navigation">
-          <li>
-            <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
-              <label>
-                <input class="form-search-input" type="text" name="search" placeholder="Поиск по сайту">
-                <button class="form-search-button" type="submit">Найти</button>
-              </label>
-            </form>
-          </li>
-          <li>
-            <a class="header-user-log-in" href="">Войти</a>
-          </li>
-          <li>
-            <a class="header-user-compare" href="">Сравнить</a>
-          </li>
-          <li>
-            <a class="header-user-cart" href="">Корзина</a>
-          </li>
-        </ul>
+        <div class="header-top">
+          <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
+            <label>
+              <input class="form-search-input" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="form-search-button" type="submit">Найти</button>
+            </label>
+          </form>
+          <ul class="header-user-navigation">
+              <li>
+                <a class="header-user-log-in" href="">Войти</a>
+              </li>
+              <li>
+                <a class="header-user-compare" href=""><div></div>Сравнить</a>
+              </li>
+              <li>
+                <a class="header-user-cart" href="">Корзина</a>
+              </li>
+          </ul>
+        </div>
         <ul class="header-site-navigation">
           <li class="open-menu">
-            <a href="">Каталог товаров</a>
+            <a class="open-menu-link" href="">Каталог товаров<div></div></a>
             <ul class="items-catalog">
               <li>
                 <a href="">Виртуальная реальность </a>
@@ -72,55 +72,61 @@
       <h1 class="visually-hidden">Интернет магазин «DEVICE»</h1>
       <section class="slider">
         <div class="slide">
-          <img class="slider-image" src="img/slider-1.png" width="384" height="486" alt="Три селфи палки">
-          <span class="slider-number">01</span>
-          <h2 class="slider-title">Делай селфи,  как Бен Стиллер!</h2>
-          <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине.  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-          <a class="slider-button button" href="">Подробнее</a>
-          <table class="slider-table">
-            <tr>
-              <td>8,5 м</td>
-              <td>5 кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr>
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал</td>
-            </tr>
-          </table>
+          <img class="slide-image" src="img/slider-1.png" width="384" height="486" alt="Три селфи палки">
+          <div class="slide-box-one">
+            <span class="slide-number">01</span>
+            <h2 class="slide-title">Делай селфи,  как Бен Стиллер!</h2>
+            <p class="slide-text">Самая длинная палка для селфи доступна в нашем магазине.  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a class="slide-button button" href="">Подробнее</a>
+            <table class="slide-table">
+              <tr>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr>
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="slide">
-          <img class="slider-image" src="img/slider-2.png" width="384" height="486" alt="Фитнес-браслет с надписью на дисплее: «Я вижу, что ты снова ешь!»">
-          <span class="slider-number">02</span>
-          <h2 class="slider-title">Худеем  правильно!</h2>
-          <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.</p>
-          <a class="slider-button button" href="">Подробнее</a>
-          <table class="slider-table">
-            <tr>
-              <td>48 часов</td>
-            </tr>
-            <tr>
-              <td>Без подзарядки</td>
-            </tr>
-          </table>
+          <img class="slide-image" src="img/slider-2.png" width="384" height="486" alt="Фитнес-браслет с надписью на дисплее: «Я вижу, что ты снова ешь!»">
+          <div class="slide-box-two">
+            <span class="slide-number">02</span>
+            <h2 class="slide-title">Худеем  правильно!</h2>
+            <p class="slide-text">Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия и соблюдать диету.</p>
+            <a class="slide-button button" href="">Подробнее</a>
+            <table class="slide-table">
+              <tr>
+                <td>48 часов</td>
+              </tr>
+              <tr>
+                <td>Без подзарядки</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="slide">
           <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с подвешенным, стреляющим лазером">
-          <span class="slider-number">03</span>
-          <h2 class="slider-title">Порхает как бабочка, жалит как пчела!</h2>
-          <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
-          <a class="slider-button button" href="">Подробнее</a>
-          <table class="slider-table">
-            <tr>
-              <td>800 м</td>
-              <td>50 м</td>
-            </tr>
-            <tr>
-              <td>Дальность полета</td>
-              <td>Радиус поражения</td>
-            </tr>
-          </table>
+          <div class="slide-box-three">
+            <span class="slid-number">03</span>
+            <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
+            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
+            <a class="slide-button button" href="">Подробнее</a>
+            <table class="slide-table">
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <nav>
           <ul class="slider-button-list">
@@ -210,24 +216,24 @@
         </div>
       </section>
       <ul class="logos">
-        <li class="logos-punkt">
+        <li>
           <a href="">
-            <div class="logos-image" title="DJI"></div>
+            <div class="logos-image logos-list" title="DJI"></div>
           </a>
         </li>
         <li>
           <a href="">
-            <div class="logos-image-2" title="SP Gadgets"></div>
+            <div class="logos-image-2 logos-list" title="SP Gadgets"></div>
           </a>
         </li>
         <li>
           <a href="">
-            <div class="logos-image-3" title="GoPro"></div>
+            <div class="logos-image-3 logos-list" title="GoPro"></div>
           </a>
         </li>
         <li>
           <a href="">
-            <div class="logos-image-4" title="Vive"></div>
+            <div class="logos-image-4 logos-list " title="Vive"></div>
           </a>
         </li>
       </ul>
@@ -255,11 +261,11 @@
     </main>
     <footer class="main-footer">
       <!-- Подвал -->
-      <a class="main-footer-logo">
-        <img class="main-footer-image" src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
-      </a>
       <div class="footer-user-navigation">
-        <ul>
+        <a class="main-footer-logo">
+          <img class="main-footer-image" src="img/logo-yellow.svg" width="164" height="36" alt="Логотип интернет магазина «DEVICE»">
+        </a>
+        <ul class="footer-user-navigation-list">
           <li>
             <a class="footer-user-navigation-text" href="">Войти</a>
           </li>
@@ -273,7 +279,7 @@
       </div>
       <div class="footer-site-navigation">
         <p class="footer-address">г. Москва, ул. Строителей, 15</p>
-        <ul>
+        <ul class="footer-site-navigation-list">
           <li>
             <a class="footer-service-info" href="delivery.html">Доставка</a>
           </li>
@@ -286,7 +292,7 @@
         <a class="footer-phone" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>
       <div class="footer-social">
-        <ul>
+        <ul class="footer-social-list">
           <li>
             <a class="social-button" href="facebook.com" title="Перейти на нашу страницу в Фэйсбук">
               <img class="social-button-image" src="img/fb.svg" width="32" height="32" alt="Логотип Facebook" target="_blank">
