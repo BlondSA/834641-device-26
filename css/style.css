@@ -525,29 +525,35 @@ a .contacts-button {
   opacity: 0.3;
 }
 
-.footer-user-navigation-text {
+.footer-user-navigation-text .user-icon-text{
   opacity: 0.7;
   font-size: 15px;
   color: #FFFFFF;
   letter-spacing: 0.15px;
   line-height: 36px;
 }
-.footer-user-navigation-text span {
+.footer-user-navigation-text .user-log-in-icon,
+.footer-user-navigation-text .user-compare-icon,
+.footer-user-navigation-text .user-cart-icon {
   opacity: 1;
 }
 
-.footer-user-navigation-text:hover {
+.footer-user-navigation-text:hover .user-icon-text {
   opacity: 1;
 }
 
-.footer-user-navigation-text:hover span {
+.footer-user-navigation-text:hover .user-log-in-icon,
+.footer-user-navigation-text:hover .user-compare-icon,
+.footer-user-navigation-text:hover .user-cart-icon {
   opacity: 0.6;
 }
 
-.footer-user-navigation-text:active {
+.footer-user-navigation-text:active .user-icon-text {
   opacity: 0.3;
 }
-.footer-user-navigation-text:active span {
+.footer-user-navigation-text:active .user-log-in-icon,
+.footer-user-navigation-text:active .user-compare-icon,
+.footer-user-navigation-text:active .user-cart-icon {
   opacity: 0.3;
 }
 
@@ -1033,7 +1039,7 @@ a.arrow {
 
 /* Человечек желтый */
 
-.footer-user-log-in span {
+.footer-user-log-in .user-log-in-icon {
   display: inline-block;
   content: "";
   width: 13px;
@@ -1044,7 +1050,7 @@ a.arrow {
   margin-right: 15.5px;
 }
 
-.footer-user-log-in span:after {
+.footer-user-log-in .user-log-in-icon:after {
   display: inline-block;
   content: "";
   height: 7px;
@@ -1057,7 +1063,7 @@ a.arrow {
 }
 
 /* Значек сравнить желтый; */
-.footer-user-compare span {
+.footer-user-compare .user-compare-icon {
   display: inline-block;
   content: "";
   height: 10px;
@@ -1067,7 +1073,7 @@ a.arrow {
   margin-right: 11px;
   margin-left: 4px;
 }
-.footer-user-compare span:before {
+.footer-user-compare .user-compare-icon:before {
   display: inline-block;
   content: "";
   height: 7px;
@@ -1078,7 +1084,7 @@ a.arrow {
   top: 3px;
 }
 
-.footer-user-compare span:after {
+.footer-user-compare .user-compare-icon:after {
   display: inline-block;
   content: "";
   height: 8px;
