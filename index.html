@@ -14,6 +14,7 @@
           <img class="main-header-image" src="img/logo-device.svg" width="164" height="36" alt="Логотип интернет-магазина Девайс">
         </a>
         <div class="header-top">
+          <span class="magnifying-glass"></span>
           <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
             <label>
               <input class="form-search-input" type="text" name="search" placeholder="Поиск по сайту">
@@ -22,19 +23,20 @@
           </form>
           <ul class="header-user-navigation">
               <li>
-                <a class="header-user-log-in" href="">Войти</a>
+                <a class="header-user-log-in" href=""><span></span>Войти</a>
               </li>
               <li>
-                <a class="header-user-compare" href=""><div></div>Сравнить</a>
+                <a class="header-user-compare" href=""><span></span>Сравнить</a>
               </li>
               <li>
-                <a class="header-user-cart" href="">Корзина</a>
+                <a class="header-user-cart" href=""><span></span>Корзина</a>
               </li>
           </ul>
         </div>
         <ul class="header-site-navigation">
           <li class="open-menu">
-            <a class="open-menu-link" href="">Каталог товаров<div></div></a>
+            <a class="open-menu-link" href="">Каталог товаров</a>
+            <span></span>
             <ul class="items-catalog">
               <li>
                 <a href="">Виртуальная реальность </a>
@@ -112,7 +114,7 @@
         <div class="slide">
           <img class="slider-image" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер с подвешенным, стреляющим лазером">
           <div class="slide-box-three">
-            <span class="slid-number">03</span>
+            <span class="slide-number">03</span>
             <h2 class="slide-title">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="slide-button button" href="">Подробнее</a>
@@ -199,18 +201,24 @@
             </ul>
           </nav>
           <div class="service-slider-slide">
-            <h2 class="service-slide-title">Доставка</h2>
-            <p class="service-slide-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <div class="service-slide-alltext">
+              <h2 class="service-slide-title">Доставка</h2>
+              <p class="service-slide-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
             <img class="service-slide-image" src="img/delivery.svg" width="133" height="159" atl="Бегущий человек с заказом">
           </div>
           <div class="service-slider-slide">
-            <h2 class="service-slide-title">Гарантия</h2>
-            <p class="service-slide-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <div class="service-slide-alltext">
+              <h2 class="service-slide-title">Гарантия</h2>
+              <p class="service-slide-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </div>
             <img class="service-slide-image" src="img/warranty.svg" width="172" height="194" atl="Гарантия на товар">
           </div>
           <div class="service-slider-slide">
-            <h2 class="service-slide-title">Кредит</h2>
-            <p class="service-slide-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.</p>
+            <div class="service-slide-alltext">
+              <h2 class="service-slide-title">Кредит</h2>
+              <p class="service-slide-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </div>
             <img class="service-slide-image" src="img/credit.svg" width="157" height="186" atl="Человек с большой кредитной картой на спине">
           </div>
         </div>
@@ -267,13 +275,13 @@
         </a>
         <ul class="footer-user-navigation-list">
           <li>
-            <a class="footer-user-navigation-text" href="">Войти</a>
+            <a class="footer-user-navigation-text footer-user-log-in" href=""><span></span>Войти</a>
           </li>
           <li>
-            <a class="footer-user-navigation-text" href="">Сравнить</a>
+            <a class="footer-user-navigation-text footer-user-compare" href=""><span></span>Сравнить</a>
           </li>
           <li>
-            <a class="footer-user-navigation-text" href="">Корзина</a>
+            <a class="footer-user-navigation-text footer-user-compare" href=""><span></span>Корзина</a>
           </li>
         </ul>
       </div>

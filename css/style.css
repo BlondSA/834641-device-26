@@ -71,6 +71,7 @@ ul {
 
 .form-search-input::placeholder {
   opacity: 0.3;
+  color: #000000;
 }
 
 .form-search-input:hover::-webkit-input-placeholder {
@@ -95,16 +96,16 @@ ul {
 }
 
 .form-search-input:focus::-webkit-input-placeholder {
-  opacity: 0.6;
+  opacity: 1;
 }
 .form-search-input:focus::-moz-placeholder {
-  opacity: 0.6;
+  opacity: 1;
 }
 .form-search-input:focus:-moz-placeholder {
-  opacity: 0.6;
+  opacity: 1;
 }
 .form-search-input:focus:-ms-input-placeholder {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .form-search-input:focus + .form-search-button {
@@ -112,7 +113,10 @@ ul {
 }
 
 .form-search-input:focus {
-  border-bottom: 2px solid #000000;
+  outline: 0;
+}
+
+.form-search-input:focus {
   outline: 0;
 }
 
@@ -122,6 +126,11 @@ ul {
   width: 85px;
   height: 49px;
   background: rgba(240, 197, 46, 0);
+}
+
+.form-search-botton:focus {
+  border-bottom: 2px solid #000000;
+
 }
 
 .form-search-button:hover {
@@ -139,6 +148,7 @@ ul {
   letter-spacing: 0.15px;
   text-align: center;
   color: rgba(255, 255, 255, 0.3);
+  outline: 0;
 }
 
 .header-user-log-in:hover,
@@ -210,6 +220,12 @@ background: rgba(0, 0, 0, 1);
   color: #000000;
   letter-spacing: 0.15px;
   line-height: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-user-navigation .header-user-log-in {
+  margin-right: auto;
 }
 
 .header-log-out {
@@ -233,7 +249,6 @@ background: rgba(0, 0, 0, 1);
   color: #000000;
   line-height: 36px;
 }
-
 
 .slide-number {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
@@ -293,7 +308,6 @@ background: rgba(0, 0, 0, 1);
   background: rgba(240, 197, 46, 1);
 }
 
-.popular-link:active .popular-container,
 .popular-link:active .popular-image {
   background: rgba(240, 197, 46, 1);
   opacity: 0.3;
@@ -429,11 +443,13 @@ a:active .popular-container + .popular-text {
   color: #000000;
   letter-spacing: 0.21px;
   line-height: 48px;
+  margin-top: 51px;
 }
 
 .about-us-text {
   letter-spacing: 0;
   width: 477px;
+  margin-top: 50px;
 }
 
 .about-us-transport-companies {
@@ -444,6 +460,8 @@ a:active .popular-container + .popular-text {
   letter-spacing: 0;
   line-height: 40px;
   width: 477px;
+  margin-top: 81px;
+  margin-bottom: 70px;
 }
 
 .about-us-transport-companies li::before {
@@ -455,6 +473,9 @@ a:active .popular-container + .popular-text {
   border-radius: 50%;
   margin-left: 4px;
   margin-right: 26px;
+}
+
+.about-us-botton {
 }
 
 .contacts {
@@ -469,18 +490,28 @@ a:active .popular-container + .popular-text {
   color: #000000;
   letter-spacing: 0.21px;
   line-height: 48px;
+  margin-top: 51px;
 }
 
 .contacts-text {
   letter-spacing: 0;
   width: 541px;
+  margin-top: 60px;
+}
+
+a .contacts-image {
+  margin-top: 45px;
+  margin-bottom: 81px;
+}
+
+a .contacts-button {
+  margin-top: 81px;
 }
 
 .main-footer {
   width: auto;
   min-height: 323px;
   background: #464646;
-  margin-top: 89px;
 }
 .main-footer-logo {
 
@@ -501,12 +532,22 @@ a:active .popular-container + .popular-text {
   letter-spacing: 0.15px;
   line-height: 36px;
 }
+.footer-user-navigation-text span {
+  opacity: 1;
+}
 
 .footer-user-navigation-text:hover {
   opacity: 1;
 }
 
+.footer-user-navigation-text:hover span {
+  opacity: 0.6;
+}
+
 .footer-user-navigation-text:active {
+  opacity: 0.3;
+}
+.footer-user-navigation-text:active span {
   opacity: 0.3;
 }
 
@@ -563,6 +604,7 @@ a:active .popular-container + .popular-text {
 .footer-copyright-image:hover {
   opacity: 0.6;
 }
+
 
 .footer-copyright-image:active {
   opacity: 0.3;
@@ -880,10 +922,171 @@ a.arrow {
   border-bottom-width: 0px;
 }
 
-/* Крест меню выпадающего списка */
+/* Каталог плюсик */
 
-.cross {
+.header-site-navigation span {
+  display: inline-block;
+  content: "";
+  height: 16px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+  position: relative;
+  opacity: 0.3;
+  left: 16px;
+  top: 1px;
+}
+.header-site-navigation span:after {
+  display: inline-block;
+  content: "";
+  height: 2px;
+  width: 16px;
+  background: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: -7px;
+  top: 7px;
+}
 
+/* Увеличительное стекло */
+
+.header-top .magnifying-glass {
+  display: inline;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 1);
+  position: relative;
+  margin-right: 22.5px;
+}
+
+.header-top .magnifying-glass:after {
+  display: inline-block;
+  content: "";
+  height: 7px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+  border-bottom-left-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 14px;
+  top: 12px;
+}
+
+/* Человечек */
+
+.header-user-log-in span {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 6.5px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background: rgba(0, 0, 0, 1);
+  position: relative;
+  margin-right: 15.5px;
+}
+
+.header-user-log-in span:after {
+  display: inline-block;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 3px;
+  top: -6px;
+}
+
+/* Значек сравнить */
+.header-user-compare span {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+  position: relative;
+  margin-right: 11px;
+  margin-left: 4px;
+}
+.header-user-compare span:before {
+  display: inline-block;
+  content: "";
+  height: 7px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: -4px;
+  top: 3px;
+}
+
+.header-user-compare span:after {
+  display: inline-block;
+  content: "";
+  height: 8px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 4px;
+  top: 2px;
+}
+
+/* Человечек желтый */
+
+.footer-user-log-in span {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 6.5px;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  background: rgba(240, 197, 46, 1);
+  position: relative;
+  margin-right: 15.5px;
+}
+
+.footer-user-log-in span:after {
+  display: inline-block;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: rgba(240, 197, 46, 1);
+  position: absolute;
+  left: 3px;
+  top: -6px;
+}
+
+/* Значек сравнить желтый; */
+.footer-user-compare span {
+  display: inline-block;
+  content: "";
+  height: 10px;
+  width: 2px;
+  background: rgba(240, 197, 46, 1);
+  position: relative;
+  margin-right: 11px;
+  margin-left: 4px;
+}
+.footer-user-compare span:before {
+  display: inline-block;
+  content: "";
+  height: 7px;
+  width: 2px;
+  background: rgba(240, 197, 46, 1);
+  position: absolute;
+  left: -4px;
+  top: 3px;
+}
+
+.footer-user-compare span:after {
+  display: inline-block;
+  content: "";
+  height: 8px;
+  width: 2px;
+  background: rgba(240, 197, 46, 1);
+  position: absolute;
+  left: 4px;
+  top: 2px;
 }
 
 /* кнопка закрыть  */
@@ -894,7 +1097,7 @@ a.arrow {
   right: 22px;
   width: 55px;
   height: 55px;
-  background-color: #F0C52E;
+  background: rgba(240, 197, 46, 1);
   border-radius: 50%;
   opacity: 0.5;
 }
@@ -926,7 +1129,104 @@ a.arrow {
   opacity: 0.3;
 }
 
-/* Каталог плюсик */
+/* Кнопка фильтра квадрат с галочкой */
+
+
+
+/* Кнопка фильтра квадрат без галочки
+div:before {
+  display: inline-block;
+  content: "";
+  height: 19px;
+  width: 19px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  position: relative;
+}
+*/
+
+/* Кнопка фильтра кружок с точкой
+div {
+  display: inline-block;
+  content: "";
+  height: 17px;
+  width: 17px;
+  background-color: #ffffff;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  position: relative;
+}
+div:after {
+  display: inline-block;
+  content: "";
+  height: 9px;
+  width: 9px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: relative;
+  left: 4px;
+  top: -1px;
+}
+*/
+
+/* Кнопка фильтра кружок без точки
+div {
+  display: inline-block;
+  content: "";
+  height: 17px;
+  width: 17px;
+  background-color: #ffffff;
+  border: 4px solid #000000;
+  border-radius: 50%;
+  position: relative;
+}
+ */
+
+/* Кнопка фильтра сдвижная
+div {
+  display: inline-block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 2px 0 0 #dadada;
+}
+div:after {
+  display: inline-block;
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: relative;
+  left: 8px;
+  top: -1px;
+}
+*/
+
+
+
+
+
+/* Кнопка с фоном сдвижная
+div {
+  text-align: center;
+  vertical-align: center;
+}
+div:after {
+  display: inline-block;
+  content: "";
+  height: 8px;
+  width: 160px;
+  background-color: #F0C52E;
+  position: relative;
+  top: -19px;
+  z-index: -1;
+}
+*/
 
 
 
@@ -949,74 +1249,35 @@ a.arrow {
 }
 .header-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
 }
-
-.header-user-compare div {
-  display: inline-block;
-  content: "";
-  height: 10px;
-  width: 2px;
-  background: rgba(0, 0, 0, 1);
-  position: relative;
-  margin-left: 5px;
-  margin-right: 11px;
-}
-.header-user-compare div:before {
-  display: inline-block;
-  content: "";
-  height: 7px;
-  width: 2px;
-  background: rgba(0, 0, 0, 1);
-  position: absolute;
-  left: -4px;
-  top: 3px;
+.header-top .form-search {
+  margin-right: auto;
 }
 
-.header-user-compare div:after {
-  display: inline-block;
-  content: "";
-  height: 8px;
-  width: 2px;
-  background: rgba(0, 0, 0, 1);
-  position: absolute;
-  left: 4px;
-  top: 2px;
-}
-
-.header-site-navigation div {
-  display: inline-block;
-  content: "";
-  height: 16px;
-  width: 2px;
-  background: rgba(0, 0, 0, 0.6);
-  position: relative;
-  left: 16px;
-  top: 1px;
-}
-.header-site-navigation div:after {
-  display: inline-block;
-  content: "";
-  height: 2px;
-  width: 16px;
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: -7px;
-  top: 7px;
+.header-user-navigation {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-site-navigation > .open-menu {
   margin-right: auto;
 }
 
-.header-site-navigation li:last-child {
+.header-site-navigation li:nth-child(2) {
   margin-left: auto;
+  margin-right: 39.5px;
+}
+
+.header-site-navigation li:nth-child(3) {
+  margin-right: auto;
 }
 
 .header-user-navigation {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -1028,9 +1289,18 @@ a.arrow {
   align-items: baseline;
 }
 
+.slider {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1160px;
+  min-height: 501px;
+}
+
 .slide {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   min-width: 1022px;
 }
 
@@ -1066,13 +1336,33 @@ a.arrow {
 
 .service-slider-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
+.service-slide-alltext {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-slide-title {
+  margin-bottom: 42px;
+}
+
+.service-slide-text {
+  width: 456px;
+}
+
 .service-slider-navigation {
   display: flex;
+  flex-direction: column;
+}
+
+.service-slider-box {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -1081,6 +1371,11 @@ a.arrow {
 .service-slider-slide {
   display: flex;
   flex-direction: row;
+  align-items: center;
+}
+
+.service-slide-image {
+  margin-left: 79px;
 }
 
 .logos {
@@ -1102,6 +1397,7 @@ a.arrow {
   margin-top: 93px;
   flex-wrap: wrap;
   min-height: 288px;
+  margin-bottom: 89px;
 }
 
 .about-us {
@@ -1264,29 +1560,35 @@ fieldset {
 }
 
 .items {
-  margin: auto 40px;
+  margin: auto 39px;
 }
 
 .pagination {
   margin-left: 72px;
-
+  max-width: 760px;
 }
 
 .pagination-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto 30px;
-  min-height: 70px;
+  margin: auto 0px;
+  height: 70px;
   align-items: center;
+  margin-bottom: 77px;
+  flex-wrap: wrap;
 }
 
 .pagination-list-number {
   display: flex;
   flex-direction: row;
+  width: 111.16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.pagination-item {
-  margin-right: 31px;
+.pagination-list {
+  padding-left: 39px;
+  padding-right: 39px;
 }
 
