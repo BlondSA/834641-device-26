@@ -151,6 +151,10 @@ ul {
   outline: 0;
 }
 
+.header-user-log-out {
+  opacity: 0.3;
+}
+
 .header-user-log-in:hover,
 .header-user-compare:hover,
 .header-user-cart:hover,
@@ -554,6 +558,10 @@ a .contacts-button {
 .footer-user-navigation-text:active .user-log-in-icon,
 .footer-user-navigation-text:active .user-compare-icon,
 .footer-user-navigation-text:active .user-cart-icon {
+  opacity: 0.3;
+}
+
+.footer-user-log-out .user-icon-text {
   opacity: 0.3;
 }
 
@@ -1213,11 +1221,34 @@ div:after {
 }
 */
 
+/* Кнопка сдвижная
+div {
+  display: inline-block;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 2px 0 0 #dadada;
+}
+div:after {
+  display: inline-block;
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: #ababab;
+  border-radius: 50%;
+  position: relative;
+  left: 8px;
+  top: -1px;
+}
+*/
 
 
 
 
-/* Кнопка с фоном сдвижная
+/* Фон для кнопок
 div {
   text-align: center;
   vertical-align: center;
@@ -1233,6 +1264,8 @@ div:after {
   z-index: -1;
 }
 */
+
+
 
 
 
