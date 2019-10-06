@@ -376,7 +376,6 @@ a:active .popular-container+.popular-text {
 
 .service-slider {
   background: #E5E5E5;
-  margin: 0 auto;
 }
 
 .service-slider-button {
@@ -1402,13 +1401,17 @@ div:after {
   margin-right: 0;
 }
 
-.service-slider-box {
+.service-slider-wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+.service-slider-slide {
+  display: flex;
+  align-items: center;
+}
 .service-slide-alltext {
   display: flex;
   flex-direction: column;
@@ -1425,13 +1428,6 @@ div:after {
 .service-slider-navigation {
   display: flex;
   flex-direction: column;
-}
-
-.service-slider-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 /*
