@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header main-page">
         <!-- Шапка сайта с навигационным меню-->
         <nav class="main-navigation">
           <a>
@@ -298,75 +298,94 @@
         <div class="container">
           <div class="service-slider-wrapper">
             <nav class="service-slider-navigation">
-              <ul>
+              <input
+                type="radio"
+                id="service-slide-1"
+                name="service-toggle"
+                checked
+              />
+              <input type="radio" id="service-slide-2" name="service-toggle" />
+              <input type="radio" id="service-slide-3" name="service-toggle" />
+              <ul class="service-slider-labels">
                 <li>
-                  <button class="service-slider-button button-delivery button">
-                    Доставка
-                  </button>
+                  <label
+                    class="service-slider-button button-delivery button"
+                    for="service-slide-1"
+                  >
+                    <span>Доставка</span>
+                  </label>
                 </li>
                 <li>
-                  <button class="service-slider-button button-warranty button">
-                    Гарантия
-                  </button>
+                  <label
+                    class="service-slider-button button-warranty button"
+                    for="service-slide-2"
+                  >
+                    <span>Гарантия</span>
+                  </label>
                 </li>
                 <li>
-                  <button class="service-slider-button button-credit button">
-                    Кредит
-                  </button>
+                  <label
+                    class="service-slider-button button-credit button"
+                    for="service-slide-3"
+                  >
+                    <span>Кредит</span>
+                  </label>
                 </li>
               </ul>
+              <div class="service-slider-content-wrapper">
+                <div class="service-slider-slide slide-delivery">
+                  <div class="service-slide-alltext">
+                    <h2 class="service-slide-title">Доставка</h2>
+                    <p class="service-slide-text">
+                      Мы с удовольствием доставим ваш товар прямо к вашему
+                      подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                      поднимая его на ваш этаж.
+                    </p>
+                  </div>
+                  <img
+                    class="service-slide-image"
+                    src="img/delivery.svg"
+                    width="133"
+                    height="159"
+                    atl="Бегущий человек с заказом"
+                  />
+                </div>
+                <div class="service-slider-slide slide-warranty">
+                  <div class="service-slide-alltext">
+                    <h2 class="service-slide-title">Гарантия</h2>
+                    <p class="service-slide-text">
+                      Если из-за возгорания купленного у нас товара у вас сгорит
+                      дом — не переживайте, мы выдадим вам новый. Товар, не дом,
+                      конечно же.
+                    </p>
+                  </div>
+                  <img
+                    class="service-slide-image"
+                    src="img/warranty.svg"
+                    width="172"
+                    height="194"
+                    atl="Гарантия на товар"
+                  />
+                </div>
+                <div class="service-slider-slide slide-credit">
+                  <div class="service-slide-alltext">
+                    <h2 class="service-slide-title">Кредит</h2>
+                    <p class="service-slide-text">
+                      Залезть в долговую яму стало проще! Кредитные консультанты
+                      подберут для вас наиболее выгодные  условия кредита.
+                      Выгодные для нашего банка, разумеется.
+                    </p>
+                  </div>
+                  <img
+                    class="service-slide-image"
+                    src="img/credit.svg"
+                    width="157"
+                    height="186"
+                    atl="Человек с большой кредитной картой на спине"
+                  />
+                </div>
+              </div>
             </nav>
-            <div class="service-slider-slide slide-delivery">
-              <div class="service-slide-alltext">
-                <h2 class="service-slide-title">Доставка</h2>
-                <p class="service-slide-text">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.
-                </p>
-              </div>
-              <img
-                class="service-slide-image"
-                src="img/delivery.svg"
-                width="133"
-                height="159"
-                atl="Бегущий человек с заказом"
-              />
-            </div>
-            <div class="service-slider-slide slide-warranty">
-              <div class="service-slide-alltext">
-                <h2 class="service-slide-title">Гарантия</h2>
-                <p class="service-slide-text">
-                  Если из-за возгорания купленного у нас товара у вас сгорит дом
-                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
-                  же.
-                </p>
-              </div>
-              <img
-                class="service-slide-image"
-                src="img/warranty.svg"
-                width="172"
-                height="194"
-                atl="Гарантия на товар"
-              />
-            </div>
-            <div class="service-slider-slide slide-credit">
-              <div class="service-slide-alltext">
-                <h2 class="service-slide-title">Кредит</h2>
-                <p class="service-slide-text">
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные  условия кредита. Выгодные
-                  для нашего банка, разумеется.
-                </p>
-              </div>
-              <img
-                class="service-slide-image"
-                src="img/credit.svg"
-                width="157"
-                height="186"
-                atl="Человек с большой кредитной картой на спине"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -549,35 +568,41 @@
       </section>
     </footer>
     <!-- Всплывающие окна -->
-    <section class="popup write-us">
+    <section class="popup-write-us">
       <button class="popup-close" type="button" aria-label="Закрыть"></button>
       <form
         class="form-write-us"
-        method="POST"
+        method="GET"
         action="https://echo.htmlacademy.ru"
       >
-        <h2 class="visually-hidden">Напишите нам</h2>
-        <p>
-          <label class="user-name-labe" for="user-name">Ваше имя:</label>
-          <input
-            class="user-name"
-            type="text"
-            name="Name"
-            id="user-name"
-            placeholder="Имя Фамилия"
-            required
-          />
-          <label class="email-label" for="user-email">Ваш e-mail:</label>
-          <input
-            class="email"
-            type="email"
-            name="Email"
-            id="user-email"
-            placeholder="email@example.com"
-            required
-          />
-        </p>
-        <p>
+        <div class="form-name-email-wrapper">
+          <div class="form-name">
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <label class="user-name-label" for="user-name">Ваше имя:</label>
+            <input
+              class="user-name"
+              type="text"
+              name="Name"
+              id="user-name"
+              placeholder="Имя Фамилия"
+              required
+              style="width: 360px; height: 50px;"
+            />
+          </div>
+          <div class="form-email">
+            <label class="email-label" for="user-email">Ваш e-mail:</label>
+            <input
+              class="email"
+              type="email"
+              name="Email"
+              id="user-email"
+              placeholder="email@example.com"
+              required
+              style="width: 360px; height: 50px;"
+            />
+          </div>
+        </div>
+        <div class="form-text-area">
           <label class="message-area-label" for="user-message"
             >Текст письма:</label
           >
@@ -587,12 +612,13 @@
             id="user-message"
             placeholder="В свободной форме"
             required
+            style="width: 760px; height: 157px;"
           ></textarea>
-        </p>
-        <button class="popup-sent" type="submit">Отправить</button>
+          <button class="popup-sent" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
-    <section class="popup big-map">
+    <section class="popup-big-map">
       <button class="popup-close" type="button" aria-label="Закрыть"></button>
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img
