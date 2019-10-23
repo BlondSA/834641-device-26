@@ -41,8 +41,7 @@
             <ul class="header-user-navigation">
               <li>
                 <a class="header-user-profile header-user-log-in" href=""
-                  ><span class="header-user-log-in-icon"></span>Валентин
-                  Петухов</a
+                  >Валентин Петухов</a
                 >
               </li>
               <li>
@@ -54,9 +53,7 @@
                 >
               </li>
               <li>
-                <a class="header-user-cart" href=""
-                  ><span class="header-user-cart-icon"></span>Корзина</a
-                >
+                <a class="header-user-cart" href="">Корзина</a>
               </li>
             </ul>
           </div>
@@ -65,24 +62,30 @@
               <a class="open-menu-link" href="">Каталог товаров</a>
               <span></span>
               <ul class="menu-items-catalog">
-                <li>
-                  <a href="">Виртуальная реальность </a>
-                </li>
-                <li>
-                  <a>Моноподы для селфи </a>
-                </li>
-                <li>
-                  <a href="">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="">Умные часы</a>
-                </li>
-                <li>
-                  <a href="">Квадрокоптеры</a>
-                </li>
+                <ul>
+                  <li>
+                    <a href="">Виртуальная реальность </a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Моноподы для селфи </a>
+                  </li>
+                  <li>
+                    <a href="">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="">Фитнес-браслеты</a>
+                  </li>
+                  <li>
+                    <a href="">Умные часы</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </ul>
             </li>
             <li>
@@ -177,56 +180,61 @@
                 <legend>Цвет</legend>
                 <ul>
                   <li>
-                    <label class="filter-checkbox-label">
-                      <input
-                        class="filter-checkbox"
-                        type="checkbox"
-                        name="filter-black"
-                        checked
-                      /><span class="check-box-icon"></span
-                      ><span class="check-box-text">Черный</span>
+                    <input
+                      class="filter-checkbox"
+                      type="checkbox"
+                      name="filter-black"
+                      id="filter-black"
+                      checked
+                    />
+                    <label class="filter-checkbox-label" for="filter-black">
+                      Черный
                     </label>
                   </li>
                   <li>
-                    <label class="filter-checkbox-label">
-                      <input
-                        class="filter-checkbox"
-                        type="checkbox"
-                        name="filter-white"
-                      /><span class="check-box-icon"></span
-                      ><span class="check-box-text">Белый</span>
+                    <input
+                      class="filter-checkbox"
+                      type="checkbox"
+                      name="filter-white"
+                      id="filter-white"
+                    />
+                    <label class="filter-checkbox-label" for="filter-white">
+                      Белый
                     </label>
                   </li>
                   <li>
-                    <label class="filter-checkbox-label">
-                      <input
-                        class="filter-checkbox"
-                        type="checkbox"
-                        name="filter-blue"
-                        checked
-                      /><span class="check-box-icon"></span
-                      ><span class="check-box-text">Синий</span>
+                    <input
+                      class="filter-checkbox"
+                      type="checkbox"
+                      name="filter-blue"
+                      id="filter-blue"
+                      checked
+                    />
+                    <label class="filter-checkbox-label" for="filter-blue">
+                      Синий
                     </label>
                   </li>
                   <li>
-                    <label class="filter-checkbox-label">
-                      <input
-                        class="filter-checkbox"
-                        type="checkbox"
-                        name="filter-red"
-                        checked
-                      /><span class="check-box-icon"></span
-                      ><span class="check-box-text">Красный</span>
+                    <input
+                      class="filter-checkbox"
+                      type="checkbox"
+                      name="filter-red"
+                      id="filter-red"
+                      checked
+                    />
+                    <label class="filter-checkbox-label" for="filter-red">
+                      Красный
                     </label>
                   </li>
                   <li>
-                    <label class="filter-checkbox-label">
-                      <input
-                        class="filter-checkbox"
-                        type="checkbox"
-                        name="filter-pink"
-                      /><span class="check-box-icon"></span
-                      ><span class="check-box-text">Розовый</span>
+                    <input
+                      class="filter-checkbox"
+                      type="checkbox"
+                      name="filter-pink"
+                      id="filter-pink"
+                    />
+                    <label class="filter-checkbox-label" for="filter-pink">
+                      Розовый
                     </label>
                   </li>
                 </ul>
@@ -235,24 +243,26 @@
                 <legend>Bluetooth</legend>
                 <ul>
                   <li>
-                    <label class="filter-radio-label">
-                      <input
-                        class="filter-radio"
-                        type="radio"
-                        name="filter-radio"
-                        checked
-                      /><span class="filter-radio-icon"></span
-                      ><span class="filter-radio-text">Есть</span>
+                    <input
+                      class="filter-radio"
+                      type="radio"
+                      name="filter-radio"
+                      id="filter-radio-on"
+                      checked
+                    />
+                    <label class="filter-radio-label" for="filter-radio-on"
+                      >Есть
                     </label>
                   </li>
                   <li>
-                    <label class="filter-radio-label">
-                      <input
-                        class="filter-radio"
-                        type="radio"
-                        name="filter-radio"
-                      /><span class="filter-radio-icon"></span
-                      ><span class="filter-radio-text">Нет</span>
+                    <input
+                      class="filter-radio"
+                      type="radio"
+                      name="filter-radio"
+                      id="filter-radio-off"
+                    />
+                    <label class="filter-radio-label" for="filter-radio-off"
+                      >Нет
                     </label>
                   </li>
                 </ul>
@@ -410,30 +420,22 @@
           <ul class="footer-user-navigation-list">
             <li>
               <a class="footer-user-navigation-text footer-user-log-in" href=""
-                ><span class="user-log-in-icon"></span
-                ><span class="user-icon-text user-log-in-text"
-                  >Валентин Петухов</span
-                ></a
+                >Валентин Петухов</a
               >
             </li>
             <li>
               <a class="footer-user-navigation-text footer-user-log-out" href=""
-                ><span class="user-log-out-icon"></span
-                ><span class="user-icon-text user-log-out-text">Выйти</span></a
+                >Выйти</a
               >
             </li>
             <li>
               <a class="footer-user-navigation-text footer-user-compare" href=""
-                ><span class="user-compare-icon"></span
-                ><span class="user-icon-text user-compare-text"
-                  >Сравнить</span
-                ></a
+                ><span class="footer-user-compare-icon"></span>Сравнить</a
               >
             </li>
             <li>
-              <a class="footer-user-navigation-text footer-user-compare" href=""
-                ><span class="user-cart-icon"></span
-                ><span class="user-icon-text user-cart-text">Корзина</span></a
+              <a class="footer-user-navigation-text footer-user-cart" href=""
+                >Корзина</a
               >
             </li>
           </ul>

@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <header class="main-header main-page">
+      <header class="main-header">
         <!-- Шапка сайта с навигационным меню-->
         <nav class="main-navigation">
           <a>
@@ -39,9 +39,7 @@
             </form>
             <ul class="header-user-navigation">
               <li>
-                <a class="header-user-log-in" href=""
-                  ><span class="header-user-log-in-icon"></span>Войти</a
-                >
+                <a class="header-user-log-in" href="">Войти</a>
               </li>
               <li>
                 <a class="header-user-compare" href=""
@@ -49,9 +47,7 @@
                 >
               </li>
               <li>
-                <a class="header-user-cart" href=""
-                  ><span class="header-user-cart-icon"></span>Корзина</a
-                >
+                <a class="header-user-cart" href="">Корзина</a>
               </li>
             </ul>
           </div>
@@ -60,24 +56,30 @@
               <a class="open-menu-link" href="">Каталог товаров</a>
               <span></span>
               <ul class="menu-items-catalog">
-                <li>
-                  <a href="">Виртуальная реальность </a>
-                </li>
-                <li>
-                  <a href="catalog.html">Моноподы для селфи </a>
-                </li>
-                <li>
-                  <a href="">Экшн-камеры</a>
-                </li>
-                <li>
-                  <a href="">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="">Умные часы</a>
-                </li>
-                <li>
-                  <a href="">Квадрокоптеры</a>
-                </li>
+                <ul>
+                  <li>
+                    <a href="">Виртуальная реальность </a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Моноподы для селфи </a>
+                  </li>
+                  <li>
+                    <a href="">Экшн-камеры</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="">Фитнес-браслеты</a>
+                  </li>
+                  <li>
+                    <a href="">Умные часы</a>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="">Квадрокоптеры</a>
+                  </li>
+                </ul>
               </ul>
             </li>
             <li>
@@ -306,32 +308,26 @@
               />
               <input type="radio" id="service-slide-2" name="service-toggle" />
               <input type="radio" id="service-slide-3" name="service-toggle" />
-              <ul class="service-slider-labels">
-                <li>
-                  <label
-                    class="service-slider-button button-delivery button"
-                    for="service-slide-1"
-                  >
-                    <span>Доставка</span>
-                  </label>
-                </li>
-                <li>
-                  <label
-                    class="service-slider-button button-warranty button"
-                    for="service-slide-2"
-                  >
-                    <span>Гарантия</span>
-                  </label>
-                </li>
-                <li>
-                  <label
-                    class="service-slider-button button-credit button"
-                    for="service-slide-3"
-                  >
-                    <span>Кредит</span>
-                  </label>
-                </li>
-              </ul>
+              <div class="service-slider-labels">
+                <label
+                  class="button service-slider-button"
+                  for="service-slide-1"
+                >
+                  Доставка
+                </label>
+                <label
+                  class="button service-slider-button"
+                  for="service-slide-2"
+                >
+                  Гарантия
+                </label>
+                <label
+                  class="button service-slider-button"
+                  for="service-slide-3"
+                >
+                  Кредит
+                </label>
+              </div>
               <div class="service-slider-content-wrapper">
                 <div class="service-slider-slide slide-delivery">
                   <div class="service-slide-alltext">
@@ -440,7 +436,7 @@
                 alt="Карта с расположением магазина"
               />
             </a>
-            <a class="contacts-button button" href="">Напишите нам</a>
+            <a class="button contacts-button" href="">Напишите нам</a>
           </div>
         </section>
       </div>
@@ -461,22 +457,17 @@
           <ul class="footer-user-navigation-list">
             <li>
               <a class="footer-user-navigation-text footer-user-log-in" href=""
-                ><span class="user-log-in-icon"></span
-                ><span class="user-icon-text user-log-in-text">Войти</span></a
+                >Валентин Петухов</a
               >
             </li>
             <li>
               <a class="footer-user-navigation-text footer-user-compare" href=""
-                ><span class="user-compare-icon"></span
-                ><span class="user-icon-text user-compare-text"
-                  >Сравнить</span
-                ></a
+                ><span class="footer-user-compare-icon"></span>Сравнить</a
               >
             </li>
             <li>
               <a class="footer-user-navigation-text footer-user-cart" href=""
-                ><span class="user-cart-icon"></span
-                ><span class="user-icon-text user-cart-text">Корзина</span></a
+                >Корзина</a
               >
             </li>
           </ul>
