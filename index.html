@@ -27,15 +27,15 @@
               method="get"
               action="https://echo.htmlacademy.ru"
             >
-              <label>
-                <input
-                  class="form-search-input"
-                  type="search"
-                  name="search"
-                  placeholder="Поиск по сайту"
-                />
-                <button class="form-search-button" type="submit">Найти</button>
-              </label>
+              <label class="form-search-input-label" for="search"></label>
+              <input
+                class="form-search-input"
+                type="text"
+                name="search"
+                placeholder="Поиск по сайту"
+                id="search"
+              />
+              <button class="form-search-button">Найти</button>
             </form>
             <ul class="header-user-navigation">
               <li>
@@ -51,32 +51,35 @@
           </div>
           <ul class="header-site-navigation">
             <li class="open-menu">
-              <a class="open-menu-link" href="">Каталог товаров</a>
+              <a class="open-menu-link" href="">Каталог товаров</a
+              ><span class="icon-plus"></span>
               <ul class="menu-items-catalog">
-                <ul>
-                  <li>
-                    <a href="">Виртуальная реальность </a>
-                  </li>
-                  <li>
-                    <a href="catalog.html">Моноподы для селфи </a>
-                  </li>
-                  <li>
-                    <a href="">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Фитнес-браслеты</a>
-                  </li>
-                  <li>
-                    <a href="">Умные часы</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Квадрокоптеры</a>
-                  </li>
-                </ul>
+                <li class="menu-items-catalog-list">
+                  <ul>
+                    <li>
+                      <a href="">Виртуальная реальность </a>
+                    </li>
+                    <li>
+                      <a href="catalog.html">Моноподы для селфи </a>
+                    </li>
+                    <li>
+                      <a href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a href="">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
@@ -99,7 +102,7 @@
     <main class="main-container">
       <div class="container">
         <h1 class="visually-hidden">Интернет магазин «DEVICE»</h1>
-        <nav class="slider-wrapper">
+        <div class="slider-wrapper">
           <input type="radio" id="slide-1" name="toggle" checked />
           <input type="radio" id="slide-2" name="toggle" />
           <input type="radio" id="slide-3" name="toggle" />
@@ -120,8 +123,8 @@
                   Делай селфи,<br />
                   как Бен Стиллер!
                 </h2>
-                <p>
-                  Самая длинная палка для селфи доступна в нашем магазине.<br />
+                <p class="slide-text-one">
+                  Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5
                   килограмм.
                 </p>
@@ -156,7 +159,7 @@
                   Худеем<br />
                   правильно!
                 </h2>
-                <p class="slide-text">
+                <p class="slide-text-two">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы  не
                   пропускать занятия и соблюдать диету.
                 </p>
@@ -164,13 +167,9 @@
                 <table class="slide-table">
                   <tr>
                     <td>48 часов</td>
-                    <td></td>
-                    <td></td>
                   </tr>
                   <tr>
                     <td>Без подзарядки</td>
-                    <td></td>
-                    <td></td>
                   </tr>
                 </table>
               </div>
@@ -190,7 +189,7 @@
                 <h2 class="slide-title">
                   Порхает как бабочка, жалит как пчела!
                 </h2>
-                <p class="slider-text">
+                <p class="slide-text-three">
                   Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным
                   лазером, замаскированным под стандартную камеру.
                 </p>
@@ -215,7 +214,7 @@
             <label class="btn-2" for="slide-2"></label>
             <label class="btn-3" for="slide-3"></label>
           </div>
-        </nav>
+        </div>
       </div>
       <div class="container">
         <ul class="popular-list">
@@ -244,9 +243,8 @@
                   alt=""
                 />
               </div>
-              <p class="popular-text">
-                Моноподы<br />
-                для селфи
+              <p class="popular-text popular-monopod">
+                Моноподы для селфи
               </p>
             </a>
           </li>
@@ -308,9 +306,9 @@
           </li>
         </ul>
       </div>
-      <section class="service-slider">
+      <div class="service-slider">
         <div class="container">
-          <nav class="service-slider-navigation">
+          <div class="service-slider-navigation">
             <input
               type="radio"
               id="service-slide-1"
@@ -320,13 +318,22 @@
             <input type="radio" id="service-slide-2" name="service-toggle" />
             <input type="radio" id="service-slide-3" name="service-toggle" />
             <div class="service-slider-labels">
-              <label class="button service-slider-button" for="service-slide-1">
+              <label
+                class="service-slider-button service-slide-1"
+                for="service-slide-1"
+              >
                 Доставка
               </label>
-              <label class="button service-slider-button" for="service-slide-2">
+              <label
+                class="service-slider-button service-slide-2"
+                for="service-slide-2"
+              >
                 Гарантия
               </label>
-              <label class="button service-slider-button" for="service-slide-3">
+              <label
+                class="service-slider-button service-slide-3"
+                for="service-slide-3"
+              >
                 Кредит
               </label>
             </div>
@@ -346,7 +353,7 @@
                     src="img/delivery.svg"
                     width="133"
                     height="159"
-                    atl="Бегущий человек с заказом"
+                    alt="Доставка"
                   />
                 </div>
               </div>
@@ -365,14 +372,14 @@
                     src="img/warranty.svg"
                     width="172"
                     height="194"
-                    atl="Гарантия на товар"
+                    alt="Гарантия"
                   />
                 </div>
               </div>
               <div class="service-slider-slide slide-credit">
                 <div class="service-slide-alltext">
                   <h2 class="service-slide-title">Кредит</h2>
-                  <p class="service-slide-text">
+                  <p class="service-slide-text service-slide-text-credit">
                     Залезть в долговую яму стало проще! Кредитные консультанты
                     подберут для вас наиболее выгодные  условия кредита.
                     Выгодные для нашего банка, разумеется.
@@ -384,14 +391,14 @@
                     src="img/credit.svg"
                     width="157"
                     height="186"
-                    atl="Человек с большой кредитной картой на спине"
+                    alt="Кредит"
                   />
                 </div>
               </div>
             </div>
-          </nav>
+          </div>
         </div>
-      </section>
+      </div>
       <div class="container">
         <ul class="logos">
           <li class="logos-item">
@@ -453,7 +460,7 @@
     </main>
     <footer class="main-footer">
       <!-- Подвал -->
-      <section class="container">
+      <div class="container">
         <div class="footer-wrapper">
           <div class="footer-user-navigation">
             <a class="main-footer-logo">
@@ -509,8 +516,9 @@
               <li>
                 <a
                   class="social-button"
-                  href="facebook.com"
+                  href="https://facebook.com"
                   title="Перейти на нашу страницу в Фэйсбук"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -518,15 +526,15 @@
                     width="32"
                     height="32"
                     alt="Логотип Facebook"
-                    target="_blank"
                   />
                 </a>
               </li>
               <li>
                 <a
                   class="social-button"
-                  href="www.instagram.com"
+                  href="https://www.instagram.com"
                   title="Перейти на нашу страницу в Инстаграм"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -534,15 +542,15 @@
                     width="32"
                     height="32"
                     alt="Логотип Instagram"
-                    target="_blank"
                   />
                 </a>
               </li>
               <li>
                 <a
                   class="social-button"
-                  href="www.twitter.com"
+                  href="https://www.twitter.com"
                   title="Перейти на нашу страницу в Твиттере"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -550,7 +558,6 @@
                     width="32"
                     height="32"
                     alt="Логитип Twitter"
-                    target="_blank"
                   />
                 </a>
               </li>
@@ -571,7 +578,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
     <!-- Всплывающие окна -->
     <section class="popup-write-us">
@@ -634,89 +641,19 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.112374947361!2d37.52742931595928!3d55.68703400452991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1572460582920!5m2!1sru!2sru"
         width="960"
         height="559"
-        frameborder="0"
         style="border:0;"
         allowfullscreen=""
       ></iframe>
-      <img
-        src="img/map-big.jpg"
-        width="960"
-        height="559"
-        alt="Мы находимся по адресу: г. Москва, ул. Строителей, д. 15"
-      />
+      <p>
+        <img
+          src="img/map-big.jpg"
+          width="960"
+          height="559"
+          alt="Мы находимся по адресу: г. Москва, ул. Строителей, д. 15"
+        />
+      </p>
     </section>
-    <script>
-      var link = document.querySelector(".contacts-button");
-      var popup = document.querySelector(".popup-write-us");
-      var close = popup.querySelector(".popup-close");
-      var form = popup.querySelector("form");
-      var Name = popup.querySelector("[name=Name]");
-      var Email = popup.querySelector("[name=Email]");
-      var Text = popup.querySelector("[name=Text]");
-      var isStorageSupport = true;
-      var storage = "";
-      try {
-        storage = localStorage.getItem("Name");
-      } catch (err) {
-        isStorageSupport = false;
-      }
-      link.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.add("popup-write-us-show");
-        if (storage) {
-          Name.value = storage;
-          Email.focus();
-        } else {
-          Name.focus();
-        }
-      });
-      close.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popup.classList.remove("popup-write-us-show");
-        popup.classList.remove("modal-error");
-      });
-      form.addEventListener("submit", function(evt) {
-        if (!Name.value || !Email.value || !Text.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } else {
-          if (isStorageSupport) {
-            localStorage.setItem("Name", Name.value);
-          }
-        }
-      });
-      window.addEventListener("keydown", function(evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("popup-write-us-show")) {
-            evt.preventDefault();
-            popup.classList.remove("popup-write-us-show");
-            popup.classList.remove("modal-error");
-          }
-        }
-      });
-    </script>
-    <script>
-      var linkMap = document.querySelector(".popup-big-map");
-      var popupMap = document.querySelector(".pop-up-big-map");
-      var closeMap = popupMap.querySelector(".close-map");
-      linkMap.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupMap.classList.add("pop-up-big-map-show");
-      });
-      closeMap.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        popupMap.classList.remove("pop-up-big-map-show");
-      });
-      window.addEventListener("keydown", function(evt) {
-        if (evt.keyCode === 27) {
-          if (popupMap.classList.contains("pop-up-big-map-show")) {
-            evt.preventDefault();
-            popupMap.classList.remove("pop-up-big-map-show");
-          }
-        }
-      });
-    </script>
+    <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

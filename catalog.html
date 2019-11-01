@@ -27,15 +27,15 @@
               method="get"
               action="https://echo.htmlacademy.ru"
             >
-              <label>
-                <input
-                  class="form-search-input"
-                  type="search"
-                  name="search"
-                  placeholder="Поиск по сайту"
-                />
-                <button class="form-search-button" type="submit">Найти</button>
-              </label>
+              <label class="form-search-input-label" for="search"></label>
+              <input
+                class="form-search-input"
+                type="text"
+                name="search"
+                placeholder="Поиск по сайту"
+                id="search"
+              />
+              <button class="form-search-button">Найти</button>
             </form>
             <ul class="header-user-navigation">
               <li>
@@ -56,32 +56,35 @@
           </div>
           <ul class="header-site-navigation">
             <li class="open-menu">
-              <a class="open-menu-link" href="">Каталог товаров</a>
+              <a class="open-menu-link" href="">Каталог товаров</a
+              ><span class="icon-plus"></span>
               <ul class="menu-items-catalog">
-                <ul>
-                  <li>
-                    <a href="">Виртуальная реальность </a>
-                  </li>
-                  <li>
-                    <a href="catalog.html">Моноподы для селфи </a>
-                  </li>
-                  <li>
-                    <a href="">Экшн-камеры</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Фитнес-браслеты</a>
-                  </li>
-                  <li>
-                    <a href="">Умные часы</a>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="">Квадрокоптеры</a>
-                  </li>
-                </ul>
+                <li class="menu-items-catalog-list">
+                  <ul>
+                    <li>
+                      <a href="">Виртуальная реальность </a>
+                    </li>
+                    <li>
+                      <a href="catalog.html">Моноподы для селфи </a>
+                    </li>
+                    <li>
+                      <a href="">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="">Фитнес-браслеты</a>
+                    </li>
+                    <li>
+                      <a href="">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
               </ul>
             </li>
             <li>
@@ -158,8 +161,8 @@
           </div>
         </div>
       </div>
-      <section class="catalog">
-        <section class="catalog-items-filter container">
+      <div class="catalog">
+        <div class="catalog-items-filter container">
           <div class="filter">
             <form
               class="filter-form"
@@ -282,7 +285,7 @@
               </button>
             </form>
           </div>
-          <section class="catalog-container">
+          <div class="catalog-container">
             <ul class="catalog-items">
               <li class="item">
                 <div class="image-wrapper">
@@ -437,13 +440,13 @@
                 </li>
               </ul>
             </div>
-          </section>
-        </section>
-      </section>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="main-footer">
       <!-- Подвал -->
-      <section class="container">
+      <div class="container">
         <div class="footer-wrapper">
           <div class="footer-user-navigation">
             <a class="main-footer-logo" href="index.html">
@@ -506,8 +509,9 @@
               <li>
                 <a
                   class="social-button"
-                  href="facebook.com"
+                  href="https://www.facebook.com"
                   title="Перейти на нашу страницу в Фэйсбук"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -515,15 +519,15 @@
                     width="32"
                     height="32"
                     alt="Логотип Facebook"
-                    target="_blank"
                   />
                 </a>
               </li>
               <li>
                 <a
                   class="social-button"
-                  href="www.instagram.com"
+                  href="https://www.instagram.com"
                   title="Перейти на нашу страницу в Инстаграм"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -531,15 +535,15 @@
                     width="32"
                     height="32"
                     alt="Логотип Instagram"
-                    target="_blank"
                   />
                 </a>
               </li>
               <li>
                 <a
                   class="social-button"
-                  href="www.twitter.com"
+                  href="https://www.twitter.com"
                   title="Перейти на нашу страницу в Твиттере"
+                  target="_blank"
                 >
                   <img
                     class="social-button-image"
@@ -547,7 +551,6 @@
                     width="32"
                     height="32"
                     alt="Логитип Twitter"
-                    target="_blank"
                   />
                 </a>
               </li>
@@ -568,7 +571,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
