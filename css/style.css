@@ -1153,10 +1153,6 @@ body {
   cursor: pointer;
 }
 
-.range-toggle:focus {
-  outline: 3px solid #5fa0f8;
-}
-
 .range-toggle-min {
   left: -5px;
 }
