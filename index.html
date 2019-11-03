@@ -104,20 +104,20 @@
         <h1 class="visually-hidden">Интернет магазин «DEVICE»</h1>
         <div class="slider-wrapper">
           <input
-            class="slider-input-one"
+            class="slider-input-one visually-hidden"
             type="radio"
             id="slide-1"
             name="toggle"
             checked
           />
           <input
-            class="slider-input-two"
+            class="slider-input-two visually-hidden"
             type="radio"
             id="slide-2"
             name="toggle"
           />
           <input
-            class="slider-input-three"
+            class="slider-input-three visually-hidden"
             type="radio"
             id="slide-3"
             name="toggle"
@@ -326,20 +326,20 @@
         <div class="container">
           <div class="service-slider-navigation">
             <input
-              class="service-slider-input-one"
+              class="service-slider-input-one visually-hidden"
               type="radio"
               id="service-slide-1"
               name="service-toggle"
               checked
             />
             <input
-              class="service-slider-input-two"
+              class="service-slider-input-two visually-hidden"
               type="radio"
               id="service-slide-2"
               name="service-toggle"
             />
             <input
-              class="service-slider-input-three"
+              class="service-slider-input-three visually-hidden"
               type="radio"
               id="service-slide-3"
               name="service-toggle"
@@ -469,8 +469,8 @@
             </p>
             <a
               class="popup-big-map"
-              href=""
-              title="Мы находимся по адресу: г. Москва, ул. Строителей, д. 15"
+              href="map.html"
+              aria-label="Мы находимся по адресу: г. Москва, ул. Строителей, д. 15"
             >
               <img
                 class="contacts-image"
@@ -480,7 +480,9 @@
                 alt="Карта с расположением магазина"
               />
             </a>
-            <a class="button contacts-button" href="">Напишите нам</a>
+            <a class="button contacts-button" href="writeus.html"
+              >Напишите нам</a
+            >
           </div>
         </section>
       </div>
@@ -544,7 +546,7 @@
                 <a
                   class="social-button"
                   href="https://facebook.com"
-                  title="Перейти на нашу страницу в Фэйсбук"
+                  aria-label="Перейти на нашу страницу в Фэйсбук"
                   target="_blank"
                 >
                   <img
@@ -560,7 +562,7 @@
                 <a
                   class="social-button"
                   href="https://www.instagram.com"
-                  title="Перейти на нашу страницу в Инстаграм"
+                  aria-label="Перейти на нашу страницу в Инстаграм"
                   target="_blank"
                 >
                   <img
@@ -576,7 +578,7 @@
                 <a
                   class="social-button"
                   href="https://www.twitter.com"
-                  title="Перейти на нашу страницу в Твиттере"
+                  aria-label="Перейти на нашу страницу в Твиттере"
                   target="_blank"
                 >
                   <img
@@ -592,7 +594,7 @@
             <a
               class="footer-copyright"
               href="https://htmlacademy.ru/intensive/htmlcss"
-              title="Перейти на сайт HTML Academy"
+              aria-label="Перейти на сайт HTML Academy"
               target="_blank"
             >
               <img
@@ -681,6 +683,5 @@
       </p>
     </section>
     <script src="js/popup.min.js"></script>
-    <script src="js/map.min.js"></script>
   </body>
 </html>
